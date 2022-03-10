@@ -2,7 +2,6 @@ import funciones
 import numpy as np
 import scipy.stats as st
 import matplotlib.pyplot as plt
-import seaborn as sns
 from fitter import Fitter, get_common_distributions, get_distributions
 from math import log
 
@@ -34,12 +33,7 @@ sturges = int(round(1 + 3.322 * log(len(tiempos), 10), 0))
 
 # funciones.crappyhist(tiempos)
 
-plt.hist(
-	tiempos,
-	density = False,
-	bins = sturges,
-	label = 'Segundos'
-)
+plt.hist(tiempos, bins = sturges, density = False, label = 'Segundos')
 mn, mx = plt.xlim()
 plt.xlim(mn, mx)
 kde_xs = np.linspace(mn, mx)
@@ -55,8 +49,9 @@ plt.show()
 z = []
 for x in tiempos:
 	z.append((x - media)/desv_m)
+# print(z)
 
-f = Fitter(z, distributions = get_common_distributions())
+f = Fitter(tiempos, distributions = get_common_distributions())
 f.fit()
 print(f.summary())
 

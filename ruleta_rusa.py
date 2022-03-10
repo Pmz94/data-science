@@ -1,4 +1,4 @@
-import numeros_aleatorios, os
+import random, os
 
 if random.randint(0, 6) == 1:
 	#os.remove("C:\Windows\System32")
