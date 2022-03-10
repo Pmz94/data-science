@@ -1,5 +1,5 @@
-import numpy as np
 import random as rm
+import numpy as np
 import funciones
 
 tiempos = []

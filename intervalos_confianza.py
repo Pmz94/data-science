@@ -1,60 +1,128 @@
-# Confidence interval calculator in Python
-# https://towardsdatascience.com/how-to-calculate-confidence-intervals-in-python-a8625a48e62b
-# Let’s now calculate the confidence intervals in Python
-# using Student’s T distribution and the bootstrap technique.
-
-# Let’s import some useful libraries.
 import numpy as np
 import scipy.stats as st
-from scipy.stats import t
-from scipy.stats import norm
+from scipy.stats import norm, t, chi2, f
 
-# Let’s now simulate a dataset made of 100 numbers
-# extracted from a normal distribution.
+# Generar numeros aleatorios con distribucion normal
 x = np.random.normal(size = 100)
 
-# Let’s see we want to calculate the 95% confidence interval of the mean value.
-# Let’s calculate all the numbers we need according to the formula of confidence intervals.
-m = x.mean()
-s = x.std()
-dof = len(x) - 1
-confidence = 0.95
+# Intervalos de confianza para medias con sigma conocida
+# con la distribucion normal estandar
+print('\033[96mIntervalo de confianza para medias con sigma conocida\033[0m')
 
-# We now need the value of t.
-# The function that calculates the inverse cumulative distribution is ppf.
-# We need to apply the absolute value because the cumulative distribution works
-# with the left tail, so the result would be negative.
-t_crit = np.abs(t.ppf((1 - confidence) / 2, dof))
-
-# Now, we can apply the original formula to calculate the 95% confidence interval.
-print(m - s * t_crit / np.sqrt(len(x)), m + s * t_crit / np.sqrt(len(x)))
-
-# We know it’s correct because the normal distribution has 0 mean,
-# but if we don’t know anything about the population, we could say that,
-# with 95% confidence, the expected value of the population lies between -0.14 and 0.26.
-
-# We could have reached the same result using a bootstrap, which is unbiased.
-# In this example, I create 1000 resamples of our dataset (with replacements).
-values = [np.random.choice(x, size = len(x), replace = True).mean() for i in range(1000)]
-print(np.percentile(values, [100 * (1 - confidence) / 2, 100 * (1 - (1 - confidence) / 2)]))
-
-# As we can see, the result is almost equal to the one we have reached with the closed formula.
-
-# Confidence intervals are easy to calculate and can give a very useful insight
-# to data analysts and scientists. They give a very powerful error estimate and,
-# if used correctly, can really help us to extract as much information
-# as possible from our data.
-
-# define sample data
-data = [12, 12, 13, 13, 15, 16, 17, 22, 23, 25, 26, 27, 28, 28, 29]
-
-# create 95% confidence interval for population mean weight
-n = 20
-m = 16.98
-dv = 2.19
 alfa = 0.05
+n = len(x)
+m = x.mean()
+m0 = 50
+v = x.std()
+print(f"alfa: {alfa}\tn: {n}\tmedia: {round(m, 2)}\tdesv: {round(v, 2)}\n")
 
-print(norm.cdf(1 - alfa))
+# Sacar Z calculada
+# z calculada = media - media propuesta / (desv / raiz de n)
+z_calc = (m - m0) / (v / np.sqrt(n))
 
-# intervalo = t.interval(alpha = confidence, df = n - 1, loc = m, scale = st.sem(data))
-# print(intervalo)
+# Sacar Z critica
+# La funcion que saca la distribucion inversa acumulada is ppf
+# Se aplica valor absoluto porque la distribucion acumulada
+# trabaja con el lado izquierdo, entonces saldria negativo
+z_crit_i = norm.ppf(alfa)
+z_crit_m = abs(norm.ppf(alfa / 2))
+z_crit_d = norm.ppf(1 - alfa)
+
+print('Hipotesis')
+print(f'H0: m = {m0}\tH0: m = {m0}\tH0: m = {m0}')
+print(f'H1: m < {m0}\tH1: m != {m0}\tH1: m > {m0}\n')
+
+print(f'Z calculada: {round(z_calc, 4)}')
+print(
+	f'Z criticas\n'
+	f'izq: {round(z_crit_i, 4)} medio: {round(z_crit_m, 4)} der: {round(z_crit_d, 4)}\n'
+)
+
+# H0 se rechaza si
+h0_i = 'H0 rechazada' if z_calc <= z_crit_i else 'H0 NO rechazada'
+h0_m = 'H0 rechazada' if abs(z_calc) >= z_crit_m else 'H0 NO rechazada'
+h0_d = 'H0 rechazada' if z_calc >= z_crit_d else 'H0 NO rechazada'
+
+print(f'{h0_i}\t{h0_m}\t{h0_d}\n')
+
+print(
+	f'\033[94m'
+	f"P-valores\n"
+	f"izq: {round(norm.cdf(z_calc), 4)} medio {round(norm.sf(abs(z_calc)) * 2, 4)} der: {round(1 - norm.cdf(z_calc), 4)}\n"
+	f'\033[0m'
+)
+
+# Los intervalos de confianza ofrecen una vision muy util
+# Proporcionan un margen de error muy preciso
+# y si se usan correctamente, pueden ayudarnos a extraer
+# la mayor cantidad de información posible de nuestros datos
+
+# Calcular limites de confianza
+# limites = media +- z critica * (desv / raiz de n)
+lic = m - z_crit_m * (v / np.sqrt(n))
+lsc = m + z_crit_m * (v / np.sqrt(n))
+
+print('Intervalo de confianza')
+print(f"P({round(lic, 4)} <= m <= {round(lsc, 4)}) = {(1 - alfa)}\n")
+
+# Sabemos que esta bien porque la distribucion normal de la muestra tiene promedio de 0
+# pero como no sabemos nada de la poblacion, se puede decir que
+# al 95% de confianza, existe suficiente evidencia estadistica
+# que permite decir que el promedio de la poblacion esta entre -0.14 and 0.26.
+
+del alfa, n, m, m0, v, z_calc, z_crit_i, z_crit_m, z_crit_d, lic, lsc
+
+# Intervalos de confianza para medias con sigma desconocida
+# con la distribucion T-Student
+print('--------------------------------------------------------')
+print('\033[96mIntervalo de confianza para medias con sigma desconocida\033[0m')
+
+alfa = 0.05
+n = len(x)
+m = x.mean()
+m0 = 50
+s = x.std(ddof = 1)
+print(f"alfa: {alfa}\tn: {n}\tmedia: {round(m, 2)}\tdesv: {round(s, 2)}\n")
+
+# Sacar T calculada
+# t calculada = media - media propuesta / (desv / raiz de n)
+t_calc = (m - m0) / (s / np.sqrt(n))
+
+# Sacar T critica
+t_crit_i = t.ppf(alfa, (n - 1))
+t_crit_m = abs(t.ppf(alfa / 2, (n - 1)))
+t_crit_d = t.ppf(1 - alfa, (n - 1))
+
+print('Hipotesis')
+print(f'H0: m = {m0}\tH0: m = {m0}\tH0: m = {m0}')
+print(f'H1: m < {m0}\tH1: m != {m0}\tH1: m > {m0}\n')
+
+print(f'T calculada: {round(t_calc, 4)}')
+print(
+	f'T criticas\n'
+	f'izq: {round(t_crit_i, 4)} medio: {round(t_crit_m, 4)} der: {round(t_crit_d, 4)}\n'
+)
+
+# H0 se rechaza si
+h0_i = 'H0 rechazada' if t_calc <= t_crit_i else 'H0 NO rechazada'
+h0_m = 'H0 rechazada' if abs(t_calc) >= t_crit_m else 'H0 NO rechazada'
+h0_d = 'H0 rechazada' if t_calc >= t_crit_d else 'H0 NO rechazada'
+
+print(f'{h0_i}\t{h0_m}\t{h0_d}\n')
+
+print(
+	f'\033[94m'
+	f"P-valores\n"
+	f"izq: {round(t.cdf(t_calc, df = n - 1), 4)} medio {round(t.sf(abs(t_calc), df = n - 1) * 2, 4)} der: {round(1 - t.cdf(t_calc, df = n - 1), 4)}\n"
+	f'\033[0m'
+)
+
+# Calcular limites de confianza
+# limites = media +- t critica * (desv / raiz de n)
+lic = m - t_crit_m * (s / np.sqrt(n))
+lsc = m + t_crit_m * (s / np.sqrt(n))
+
+print('Intervalo de confianza')
+print(f"P({round(lic, 4)} <= m <= {round(lsc, 4)}) = {(1 - alfa)}\n")
+
+del alfa, n, m, m0, s, t_calc, t_crit_i, t_crit_m, t_crit_d, lic, lsc

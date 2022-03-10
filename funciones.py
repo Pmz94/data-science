@@ -1,6 +1,8 @@
-from typing import List
-from prettytable import PrettyTable
 import numpy as np
+import scipy.stats as st
+from typing import List
+import matplotlib.pyplot as plt
+from prettytable import PrettyTable
 from math import log
 
 # agrupar datos en tabla de frecuencias
@@ -34,19 +36,27 @@ def desagrupar_datos(lista: List[tuple]) -> list:
 			datos_desagrupados.append(tupla[0])
 	return datos_desagrupados
 
-# desviacion estandar poblacional
-def desv_p(lista: list) -> float:
+# varianza poblacional
+def varianza_p(lista: list) -> float:
 	n = len(lista)
 	media = sum(lista) / n
 	varianza = sum((x - media) ** 2 for x in lista) / n
-	return varianza ** 0.5
+	return varianza
 
-# desviacion estandar muestral
-def desv_m(lista: list) -> float:
+# varianza muestral
+def varianza_m(lista: list) -> float:
 	n = len(lista)
 	media = sum(lista) / n
 	varianza = sum((x - media) ** 2 for x in lista) / (n - 1)
-	return varianza ** 0.5
+	return varianza
+
+# desviacion estandar poblacional
+def desv_p(lista: list) -> float:
+	return varianza_p(lista) ** 0.5
+
+# desviacion estandar muestral
+def desv_m(lista: list) -> float:
+	return varianza_m(lista) ** 0.5
 
 # function to get unique values
 def unique(list1):
@@ -58,6 +68,37 @@ def unique(list1):
 		if x not in unique_list:
 			unique_list.append(x)
 	return unique_list
+
+def histograma(
+		data: list,
+		cols = 0,
+		titulo = 'Histograma',
+		label_x = '',
+		label_y = 'Freq',
+		linea = False
+):
+	if cols <= 0:
+		cols = int(round(1 + 3.322 * log(len(data), 10), 0))
+
+	plt.hist(
+		data,
+		bins = cols,
+		density = False,
+		label = label_x if label_x else None
+	)
+
+	if linea:
+		mn, mx = plt.xlim()
+		plt.xlim(mn, mx)
+		kde_xs = np.linspace(mn, mx)
+		kde = st.gaussian_kde(data)
+		plt.plot(kde_xs, kde.pdf(kde_xs), label = 'Tendencia')
+		plt.legend(loc = 'upper left')
+
+	if titulo: plt.title(titulo)
+	if label_x: plt.xlabel(label_x)
+	if label_y: plt.ylabel(label_y)
+	plt.show()
 
 def crappyhist(data: list, bins = 0, width = 140):
 	if bins <= 0:
