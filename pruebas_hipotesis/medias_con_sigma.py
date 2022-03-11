@@ -4,14 +4,16 @@ from scipy.stats import norm, t, chi2, f
 # Generar numeros aleatorios con distribucion normal
 x = np.random.normal(size = 100)
 
+print('--------------------------------------------------')
 print('\033[96mPrueba de hipotesis para medias con sigma conocida\033[0m')
+print('--------------------------------------------------')
 
 # Obtener parametros
 alfa = 0.05
 n = len(x)
 m = x.mean()
 v = x.std()
-print(f'alfa: {alfa}\tn: {n}\tmedia: {round(m, 2)}\tdesv poblacional: {round(v, 2)}\n')
+print(f'alfa: {alfa}\nn: {n}\tmedia: {round(m, 2)}\tdesv p: {round(v, 2)}\n')
 
 # Plantear la hipotesis
 m0 = int(round(m, 0))
@@ -59,19 +61,17 @@ print(
 	f'\033[0m'
 )
 
-# Intervalo de confianza para medias con sigma conocida
 # Los intervalos de confianza ofrecen una vision muy util
 # Proporcionan un margen de error muy preciso
 # y si se usan correctamente, pueden ayudarnos a extraer
 # la mayor cantidad de información posible de nuestros datos
 
+print('Intervalo de confianza')
 # Calcular limites de confianza
 # limites = media +- z critica de enmedio * (desv / raiz de n)
 lic = m - z_crit_m * (v / np.sqrt(n))
 lsc = m + z_crit_m * (v / np.sqrt(n))
-
-print('Intervalo de confianza')
-print(f'\033[92mP({round(lic, 4)} <= m <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m\n')
+print(f'\033[92mP({round(lic, 4)} <= m <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
 
 # Sabemos que esta bien porque la distribucion normal de la muestra tiene promedio de 0
 # pero como no sabemos nada de su poblacion, se puede decir que

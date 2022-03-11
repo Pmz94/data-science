@@ -4,14 +4,16 @@ from scipy.stats import norm, t, chi2, f
 # Generar numeros aleatorios con distribucion normal
 x = np.random.normal(size = 100)
 
+print('----------------------------------')
 print('\033[96mPrueba de hipotesis para varianzas\033[0m')
+print('----------------------------------')
 
 # Obtener parametros
 alfa = 0.05
 n = len(x)
 s = x.std(ddof = 1)
 s2 = s ** 2
-print(f'alfa: {alfa}\tn: {n}\tdesv muestral: {round(s, 2)}\tvar muestral: {round(s2, 2)}\n')
+print(f'alfa: {alfa}\nn: {n}\tdesv m: {round(s, 2)}\tvar m: {round(s2, 2)}\n')
 
 # Plantear la hipotesis
 v20 = int(round(s, 0))
@@ -58,14 +60,11 @@ print(
 	f'\033[0m'
 )
 
-# Intervalo de confianza para medias con sigma desconocida
-
+print('Intervalo de confianza')
 # Calcular limites de confianza
 # ((n - 1) * s^2) / (X2 1-alfa/2,gl) <= varianza <= ((n - 1) * s^2) / (X2 alfa/2,gl)
 lic = ((n - 1) * s2) / x2_crit_m2
 lsc = ((n - 1) * s2) / x2_crit_m1
-
-print('Intervalo de confianza')
-print(f'\033[92mP({round(lic, 4)} <= v^2 <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m\n')
+print(f'\033[92mP({round(lic, 4)} <= v^2 <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
 
 del alfa, n, s, s2, v20, x2_calc, x2_crit_i, x2_crit_m1, x2_crit_m2, x2_crit_d, h0_i, h0_m, h0_d, p_valor_i, p_valor_m1, p_valor_m2, p_valor_d, lic, lsc

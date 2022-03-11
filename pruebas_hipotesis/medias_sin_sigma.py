@@ -4,14 +4,16 @@ from scipy.stats import norm, t, chi2, f
 # Generar numeros aleatorios con distribucion normal
 x = np.random.normal(size = 100)
 
+print('-----------------------------------------------------')
 print('\033[96mPrueba de hipotesis para medias con sigma desconocida\033[0m')
+print('-----------------------------------------------------')
 
 # Obtener parametros
 alfa = 0.05
 n = len(x)
 m = x.mean()
 s = x.std(ddof = 1)
-print(f'alfa: {alfa}\tn: {n}\tmedia: {round(m, 2)}\tdesv muestral: {round(s, 2)}\n')
+print(f'alfa: {alfa}\nn: {n}\tmedia: {round(m, 2)}\tdesv m: {round(s, 2)}\n')
 
 # Plantear la hipotesis
 m0 = int(round(m, 0))
@@ -56,14 +58,11 @@ print(
 	f'\033[0m'
 )
 
-# Intervalo de confianza para medias con sigma desconocida
-
+print('Intervalo de confianza')
 # Calcular limites de confianza
 # limites = media +- t critica de enmedio * (desv / raiz de n)
 lic = m - t_crit_m * (s / np.sqrt(n))
 lsc = m + t_crit_m * (s / np.sqrt(n))
-
-print('Intervalo de confianza')
-print(f'\033[92mP({round(lic, 4)} <= m <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m\n')
+print(f'\033[92mP({round(lic, 4)} <= m <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
 
 del alfa, n, m, m0, s, t_calc, t_crit_i, t_crit_m, t_crit_d, h0_i, h0_m, h0_d, p_valor_i, p_valor_m, p_valor_d, lic, lsc
