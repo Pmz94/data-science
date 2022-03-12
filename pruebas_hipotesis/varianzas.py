@@ -10,13 +10,13 @@ print('----------------------------------')
 
 # Obtener parametros
 alfa = 0.05
-n = 20
-s = 0.123693168768529
+n = len(x)
+s = x.std(ddof = 1)
 s2 = s ** 2
 print(f'alfa: {alfa}\nn: {n}\tdesv m: {round(s, 2)}\tvar m: {round(s2, 2)}\n')
 
 # Plantear la hipotesis
-v20 = 0.01
+v20 = int(round(s2, 0))
 print('Hipotesis\033[33m')
 print(f'H0: v^2 = {v20}\tH0: v^2 = {v20}\tH0: v^2 = {v20}')
 print(f'H1: v^2 < {v20}\tH1: v^2 != {v20}\tH1: v^2 > {v20}')
@@ -48,9 +48,9 @@ print(f'\033[92m{h0_i}\t{h0_m}\t{h0_d}\033[0m\n')
 
 # Sacar P valores
 p_valor_i = chi2.cdf(x2_calc, df = n - 1)
-p_valor_m1 = 1 - chi2.sf(abs(x2_calc), df = n - 1)
+p_valor_m1 = chi2.cdf(abs(x2_calc), df = n - 1)
 p_valor_m2 = chi2.sf(abs(x2_calc), df = n - 1)
-p_valor_d = 1 - chi2.cdf(x2_calc, df = n - 1)
+p_valor_d = chi2.sf(x2_calc, df = n - 1)
 print(
 	f'\033[94m'
 	f'P-valores\n'
