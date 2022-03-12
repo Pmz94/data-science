@@ -10,13 +10,13 @@ print('----------------------------------')
 
 # Obtener parametros
 alfa = 0.05
-n = len(x)
-s = x.std(ddof = 1)
+n = 20
+s = 0.123693168768529
 s2 = s ** 2
 print(f'alfa: {alfa}\nn: {n}\tdesv m: {round(s, 2)}\tvar m: {round(s2, 2)}\n')
 
 # Plantear la hipotesis
-v20 = int(round(s, 0))
+v20 = 0.01
 print('Hipotesis\033[33m')
 print(f'H0: v^2 = {v20}\tH0: v^2 = {v20}\tH0: v^2 = {v20}')
 print(f'H1: v^2 < {v20}\tH1: v^2 != {v20}\tH1: v^2 > {v20}')
@@ -29,10 +29,10 @@ x2_calc = (n - 1) * s2 / v20
 print(f'X^2 calculada: {round(x2_calc, 4)}')
 
 # Sacar X2 critica
-x2_crit_i = chi2.ppf(alfa, (n - 1))
-x2_crit_m1 = abs(chi2.ppf(alfa / 2, (n - 1)))
-x2_crit_m2 = abs(chi2.ppf(1 - (alfa / 2), (n - 1)))
-x2_crit_d = chi2.ppf(1 - alfa, (n - 1))
+x2_crit_i = chi2.isf(1 - alfa, (n - 1))
+x2_crit_m1 = chi2.isf(alfa / 2, (n - 1))
+x2_crit_m2 = chi2.isf(1 - (alfa / 2), (n - 1))
+x2_crit_d = chi2.isf(alfa, (n - 1))
 print(
 	f'X^2 criticas\n'
 	f'izq: {round(x2_crit_i, 4)}\t'
@@ -63,8 +63,8 @@ print(
 print('Intervalo de confianza')
 # Calcular limites de confianza
 # ((n - 1) * s^2) / (X2 alfa/2,n-1) <= varianza <= ((n - 1) * s^2) / (X2 1-alfa/2,n-1)
-lic = ((n - 1) * s2) / x2_crit_m2
-lsc = ((n - 1) * s2) / x2_crit_m1
+lic = ((n - 1) * s2) / x2_crit_m1
+lsc = ((n - 1) * s2) / x2_crit_m2
 print(f'\033[92mP({round(lic, 4)} <= v^2 <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
 
 del alfa, n, s, s2, v20, x2_calc, x2_crit_i, x2_crit_m1, x2_crit_m2, x2_crit_d, h0_i, h0_m, h0_d, p_valor_i, p_valor_m1, p_valor_m2, p_valor_d, lic, lsc
