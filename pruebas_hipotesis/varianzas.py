@@ -62,7 +62,7 @@ print(
 
 print('Intervalo de confianza')
 # Calcular limites de confianza
-# ((n - 1) * s^2) / (X2 1-alfa/2,gl) <= varianza <= ((n - 1) * s^2) / (X2 alfa/2,gl)
+# ((n - 1) * s^2) / (X2 alfa/2,n-1) <= varianza <= ((n - 1) * s^2) / (X2 1-alfa/2,n-1)
 lic = ((n - 1) * s2) / x2_crit_m2
 lsc = ((n - 1) * s2) / x2_crit_m1
 print(f'\033[92mP({round(lic, 4)} <= v^2 <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
