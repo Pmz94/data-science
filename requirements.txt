@@ -3,8 +3,6 @@ scipy
 fitter
 matplotlib
 prettytable
-typing
 jupyter
-ipython
-List
 pandas
+ipython
