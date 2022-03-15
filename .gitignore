@@ -1,2 +1,3 @@
-.idea
-__pycache__
+.idea/
+.vs/
+__pycache__/
