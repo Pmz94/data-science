@@ -2,7 +2,7 @@ import numpy as np
 import scipy.stats as st
 from typing import List
 import matplotlib.pyplot as plt
-from math import log
+import math
 
 # agrupar datos en tabla de frecuencias
 def agrupar_datos(lista: list) -> List[tuple]:
@@ -12,10 +12,10 @@ def agrupar_datos(lista: list) -> List[tuple]:
 	`lista` debe tener la estructura de:
 	lista = [(dato_1, frecuencia_1), (dato_2, frecuencia_2), ... (dato_i, frecuencia_i)]
 	"""
-	hist = {}
+	counts = {}
 	for i in lista:
-		hist[i] = hist.get(i, 0) + 1
-	dict_items = hist.items()
+		counts[i] = counts.get(i, 0) + 1
+	dict_items = counts.items()
 	freq = sorted(dict_items)
 	return freq
 
@@ -27,27 +27,27 @@ def desagrupar_datos(lista: List[tuple]) -> list:
 			datos_desagrupados.append(tupla[0])
 	return datos_desagrupados
 
-def unique(list):
+def unique(lista):
 	"""Obtener los valores unicos de una lista"""
 	# initialize a null list
 	unique_list = []
 	# traverse for all elements
-	for x in list:
+	for x in lista:
 		# check if exists in unique_list or not
 		if x not in unique_list:
 			unique_list.append(x)
 	return unique_list
 
 def histograma(
-		data: list,
-		cols = 0,
-		titulo = 'Histograma',
-		label_x = '',
-		label_y = 'Freq',
-		linea = False
+	data: list,
+	cols = 0,
+	titulo = 'Histograma',
+	label_x = '',
+	label_y = 'Freq',
+	linea = False
 ):
 	if cols <= 0:
-		cols = int(round(1 + 3.322 * log(len(data), 10), 0))
+		cols = int(round(1 + 3.322 * math.log(len(data), 10), 0))
 
 	plt.hist(
 		data,
@@ -69,10 +69,25 @@ def histograma(
 	if label_y: plt.ylabel(label_y)
 	plt.show()
 
+# funcion crear graficas de series de tiempo
+def grafica_serie_tiempo(
+	ejex: List[int], ejey: List[int],
+	etiquetax = 'Tiempo',
+	etiquetay = 'Variable',
+	titulo = 'Grafica de serie de tiempo',
+	ejex_enteros = False
+) -> None:
+	plt.plot(ejex, ejey, 'o-')
+	if ejex_enteros: plt.xticks(range(math.floor(min(ejex)), math.ceil(max(ejex)) + 1))
+	plt.title(titulo)
+	plt.xlabel(etiquetax)
+	plt.ylabel(etiquetay)
+	plt.show()
+
 def crappyhist(data: list, bins = 0, width = 140):
 	if bins <= 0:
 		# regla de sturges
-		bins = int(round(1 + 3.322 * log(len(data), 10), 0))
+		bins = int(round(1 + 3.322 * math.log(len(data), 10), 0))
 
 	h, b = np.histogram(data, bins)
 
