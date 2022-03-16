@@ -2,31 +2,22 @@ import numpy as np
 import scipy.stats as st
 from typing import List
 import matplotlib.pyplot as plt
-from prettytable import PrettyTable
 from math import log
 
 # agrupar datos en tabla de frecuencias
 def agrupar_datos(lista: list) -> List[tuple]:
-	"""Tally elements from `data`."""
+	"""
+	Crea una lista con las frecuencuas de cada dato de `lista`.
+	
+	`lista` debe tener la estructura de:
+	lista = [(dato_1, frecuencia_1), (dato_2, frecuencia_2), ... (dato_i, frecuencia_i)]
+	"""
 	hist = {}
 	for i in lista:
 		hist[i] = hist.get(i, 0) + 1
 	dict_items = hist.items()
 	freq = sorted(dict_items)
 	return freq
-
-# agrupar datos en tabla de frecuencias
-def freq_table2(data: list) -> PrettyTable:
-	"""Tally elements from `data`."""
-	hist = {}
-	for j in data:
-		hist[j] = hist.get(j, 0) + 1
-	dict_items = hist.items()
-	freq = sorted(dict_items)
-	t = PrettyTable(['x', 'freq'])
-	for j in freq:
-		t.add_row([j[0], j[1]])
-	return t
 
 # desagrupar datos
 def desagrupar_datos(lista: List[tuple]) -> list:
@@ -36,34 +27,12 @@ def desagrupar_datos(lista: List[tuple]) -> list:
 			datos_desagrupados.append(tupla[0])
 	return datos_desagrupados
 
-# varianza poblacional
-def varianza_p(lista: list) -> float:
-	n = len(lista)
-	media = sum(lista) / n
-	varianza = sum((x - media) ** 2 for x in lista) / n
-	return varianza
-
-# varianza muestral
-def varianza_m(lista: list) -> float:
-	n = len(lista)
-	media = sum(lista) / n
-	varianza = sum((x - media) ** 2 for x in lista) / (n - 1)
-	return varianza
-
-# desviacion estandar poblacional
-def desv_p(lista: list) -> float:
-	return varianza_p(lista) ** 0.5
-
-# desviacion estandar muestral
-def desv_m(lista: list) -> float:
-	return varianza_m(lista) ** 0.5
-
-# function to get unique values
-def unique(list1):
+def unique(list):
+	"""Obtener los valores unicos de una lista"""
 	# initialize a null list
 	unique_list = []
 	# traverse for all elements
-	for x in list1:
+	for x in list:
 		# check if exists in unique_list or not
 		if x not in unique_list:
 			unique_list.append(x)

@@ -28,8 +28,8 @@ rango = maximo - minimo
 media = sum(tiempos) / n
 mediana = np.median(tiempos)
 moda = (st.mode(tiempos)).mode[0]
-varianza = funciones.varianza_m(tiempos)
-desv = funciones.desv_m(tiempos)
+varianza = np.var(tiempos, ddof = 1)
+desv = np.std(tiempos, ddof = 1)
 sesgo = st.skew(np.array(tiempos))
 curtosis = st.kurtosis(tiempos)
 error_tipico = desv / (n ** 0.5)
@@ -40,8 +40,8 @@ print(f"media: {round(media, 2)}\tmediana: {mediana}\tmoda: {moda}")
 print(f"varianza: {round(varianza, 4)}\tdesviacion: {round(desv, 4)}")
 print(f"sesgo: {round(float(sesgo), 4)}\tcurtosis: {round(curtosis, 4)}")
 
+"""
 print('Mostrando histograma')
-# funciones.crappyhist(tiempos)
 funciones.histograma(
 	tiempos,
 	sturges,
@@ -49,9 +49,10 @@ funciones.histograma(
 	'Segundos',
 	linea = True
 )
+"""
 
 # normalizar los datos
-z = [(x - media) / desv for x in tiempos]
+# z = [(x - media) / desv for x in tiempos]
 # print(z)
 
 print('Ajustando datos a distribuciones')
@@ -63,5 +64,3 @@ best = f.get_best(method = 'sumsquare_error')
 best_name = list(best.keys())[0]
 print('Distribucion mejor ajustada:', best_name)
 print(f.fitted_param[best_name])
-
-# data = np.random.normal(0, 0.1, 10000)
