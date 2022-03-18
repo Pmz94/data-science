@@ -1,8 +1,8 @@
+import math
 import numpy as np
 import scipy.stats as st
 from typing import List
 import matplotlib.pyplot as plt
-import math
 
 # agrupar datos en tabla de frecuencias
 def agrupar_datos(lista: list) -> List[tuple]:
@@ -10,7 +10,7 @@ def agrupar_datos(lista: list) -> List[tuple]:
 	Crea una lista con las frecuencuas de cada dato de `lista`.
 	
 	`lista` debe tener la estructura de:
-	lista = [(dato_1, frecuencia_1), (dato_2, frecuencia_2), ... (dato_i, frecuencia_i)]
+	lista = [(dato_1, frecuencia_1), (dato_2, frecuencia_2), ..., (dato_i, frecuencia_i)]
 	"""
 	counts = {}
 	for i in lista:
@@ -37,6 +37,48 @@ def unique(lista):
 		if x not in unique_list:
 			unique_list.append(x)
 	return unique_list
+
+def estadistica_descriptiva(x: list):
+	n = len(x)
+	minimo = min(x)
+	maximo = max(x)
+	rango = maximo - minimo
+	media = np.mean(x)
+	mediana = np.median(x)
+	moda = st.mode(x)
+	varianza = np.var(x)
+	dv = np.std(x)
+	q1, q2, q3 = np.quantile(x, [0.25, 0.5, 0.75])
+	sesgo = st.skew(np.array(x))
+	curtosis = st.kurtosis(x)
+	error_tipico = dv / (n ** 0.5)
+	suma = sum(x)
+	alfa = 0.05
+	ampl_ic = abs(st.t.ppf(alfa / 2, n - 1)) * error_tipico
+	lic = media - ampl_ic
+	lsc = media + ampl_ic
+	return {
+		'n': n,
+		'minimo': minimo,
+		'maximo': maximo,
+		'rango': rango,
+		'media': media,
+		'mediana': mediana,
+		'moda': moda,
+		'varianza': varianza,
+		'dv': dv,
+		'q1': q1,
+		'q2': q2,
+		'q3': q3,
+		'sesgo': sesgo,
+		'curtosis': curtosis,
+		'error_tipico': error_tipico,
+		'suma': suma,
+		'alfa': alfa,
+		'ampl_ic': ampl_ic,
+		'lic': lic,
+		'lsc': lsc
+	}
 
 def histograma(
 	data: list,

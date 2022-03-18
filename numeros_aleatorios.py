@@ -1,6 +1,5 @@
 import math
 import random as rm
-import numpy as np
 from prettytable import PrettyTable
 
 def rm_uniforme(a, b, r = rm.random()):
@@ -21,20 +20,13 @@ def rm_weibull(d, b, r = rm.random()):
 tabla = PrettyTable(field_names = ['uniforme', 'bernoulli', 'normal', 'exponencial', 'weibull'])
 
 for i in range(50):
-	r = rm.random()
+	ra = rm.random()
 	tabla.add_row([
-		rm_uniforme(10, 100, r),
-		rm_bernoulli(0.6, r),
+		rm_uniforme(10, 100, ra),
+		rm_bernoulli(0.6, ra),
 		rm_normal(0, 1),
-		rm_exponencial(6, r),
-		rm_weibull(1, 5, r)
+		rm_exponencial(6, ra),
+		rm_weibull(1, 5, ra)
 	])
 
 print(tabla.get_string())
-
-def estadistica_descriptiva(x: list):
-	n = len(x)
-	media = np.mean(x)
-	dv = np.std(x)
-	minimo = min(x)
-	maximo = max(x)
