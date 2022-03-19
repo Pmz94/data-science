@@ -18,8 +18,8 @@ print(f'alfa: {alfa}\nn: {n}\tdesv m: {round(s, 2)}\tvar m: {round(s2, 2)}\n')
 # Plantear la hipotesis
 v20 = int(round(s2, 0))
 print('Hipotesis\033[33m')
-print(f'H0: v^2 = {v20}\tH0: v^2 = {v20}\tH0: v^2 = {v20}')
-print(f'H1: v^2 < {v20}\tH1: v^2 != {v20}\tH1: v^2 > {v20}')
+print(f'H0: \u03C3^2 = {v20}\tH0: \u03C3^2 = {v20}\tH0: \u03C3^2 = {v20}')
+print(f'H1: \u03C3^2 < {v20}\tH1: \u03C3^2 != {v20}\tH1: \u03C3^2 > {v20}')
 print(f'\033[0m')
 
 # Sacar estadistico de prueba
@@ -65,6 +65,6 @@ print('Intervalo de confianza')
 # ((n - 1) * s^2) / (X2 alfa/2,n-1) <= varianza <= ((n - 1) * s^2) / (X2 1-alfa/2,n-1)
 lic = ((n - 1) * s2) / x2_crit_m1
 lsc = ((n - 1) * s2) / x2_crit_m2
-print(f'\033[92mP({round(lic, 4)} <= v^2 <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
+print(f'\033[92mP({round(lic, 4)} <= \u03C3^2 <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
 
 del alfa, n, s, s2, v20, x2_calc, x2_crit_i, x2_crit_m1, x2_crit_m2, x2_crit_d, h0_i, h0_m, h0_d, p_valor_i, p_valor_m1, p_valor_m2, p_valor_d, lic, lsc

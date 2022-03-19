@@ -18,8 +18,8 @@ print(f'alfa: {alfa}\nn: {n}\tmedia: {round(m, 2)}\tdesv p: {round(v, 2)}\n')
 # Plantear la hipotesis
 m0 = int(round(m, 0))
 print('Hipotesis\033[33m')
-print(f'H0: m = {m0}\tH0: m = {m0}\tH0: m = {m0}')
-print(f'H1: m < {m0}\tH1: m != {m0}\tH1: m > {m0}')
+print(f'H0: \u03BC = {m0}\tH0: \u03BC = {m0}\tH0: \u03BC = {m0}')
+print(f'H1: \u03BC < {m0}\tH1: \u03BC != {m0}\tH1: \u03BC > {m0}')
 print(f'\033[0m')
 
 # Sacar estadistico de prueba
@@ -71,7 +71,7 @@ print('Intervalo de confianza')
 # limites = media +- z critica de enmedio * (desv / raiz de n)
 lic = m - z_crit_m * (v / np.sqrt(n))
 lsc = m + z_crit_m * (v / np.sqrt(n))
-print(f'\033[92mP({round(lic, 4)} <= m <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
+print(f'\033[92mP({round(lic, 4)} <= \u03BC <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
 
 # Sabemos que esta bien porque la distribucion normal de la muestra tiene promedio de 0
 # pero como no sabemos nada de su poblacion, se puede decir que

@@ -18,8 +18,8 @@ print(f'alfa: {alfa}\nn: {n}\tmedia: {round(m, 2)}\tdesv m: {round(s, 2)}\n')
 # Plantear la hipotesis
 m0 = int(round(m, 0))
 print('Hipotesis\033[33m')
-print(f'H0: m = {m0}\tH0: m = {m0}\tH0: m = {m0}')
-print(f'H1: m < {m0}\tH1: m != {m0}\tH1: m > {m0}')
+print(f'H0: \u03BC = {m0}\tH0: \u03BC = {m0}\tH0: \u03BC = {m0}')
+print(f'H1: \u03BC < {m0}\tH1: \u03BC != {m0}\tH1: \u03BC > {m0}')
 print(f'\033[0m')
 
 # Sacar estadistico de prueba
@@ -63,6 +63,6 @@ print('Intervalo de confianza')
 # limites = media +- t critica de enmedio * (desv / raiz de n)
 lic = m - t_crit_m * (s / np.sqrt(n))
 lsc = m + t_crit_m * (s / np.sqrt(n))
-print(f'\033[92mP({round(lic, 4)} <= m <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
+print(f'\033[92mP({round(lic, 4)} <= \u03BC <= {round(lsc, 4)}) = {(1 - alfa)}\033[0m')
 
 del alfa, n, m, m0, s, t_calc, t_crit_i, t_crit_m, t_crit_d, h0_i, h0_m, h0_d, p_valor_i, p_valor_m, p_valor_d, lic, lsc

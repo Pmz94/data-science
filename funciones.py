@@ -4,6 +4,17 @@ import scipy.stats as st
 from typing import List
 import matplotlib.pyplot as plt
 
+def unique(lista):
+	"""Obtener los valores unicos de una lista"""
+	# initialize a null list
+	unique_list = []
+	# traverse for all elements
+	for x in lista:
+		# check if exists in unique_list or not
+		if x not in unique_list:
+			unique_list.append(x)
+	return unique_list
+
 # agrupar datos en tabla de frecuencias
 def agrupar_datos(lista: list) -> List[tuple]:
 	"""
@@ -23,20 +34,9 @@ def agrupar_datos(lista: list) -> List[tuple]:
 def desagrupar_datos(lista: List[tuple]) -> list:
 	datos_desagrupados = []
 	for tupla in lista:
-		for i in range(tupla[1]):
+		for _ in range(tupla[1]):
 			datos_desagrupados.append(tupla[0])
 	return datos_desagrupados
-
-def unique(lista):
-	"""Obtener los valores unicos de una lista"""
-	# initialize a null list
-	unique_list = []
-	# traverse for all elements
-	for x in lista:
-		# check if exists in unique_list or not
-		if x not in unique_list:
-			unique_list.append(x)
-	return unique_list
 
 def estadistica_descriptiva(x: list):
 	n = len(x)
@@ -53,6 +53,7 @@ def estadistica_descriptiva(x: list):
 	curtosis = st.kurtosis(x)
 	error_tipico = dv / (n ** 0.5)
 	suma = sum(x)
+	sturges = round(1 + 3.322 * np.log10(n))
 	alfa = 0.05
 	ampl_ic = abs(st.t.ppf(alfa / 2, n - 1)) * error_tipico
 	lic = media - ampl_ic
@@ -66,7 +67,7 @@ def estadistica_descriptiva(x: list):
 		'mediana': mediana,
 		'moda': moda,
 		'varianza': varianza,
-		'dv': dv,
+		'desv': dv,
 		'q1': q1,
 		'q2': q2,
 		'q3': q3,
@@ -74,6 +75,7 @@ def estadistica_descriptiva(x: list):
 		'curtosis': curtosis,
 		'error_tipico': error_tipico,
 		'suma': suma,
+		'sturges': sturges,
 		'alfa': alfa,
 		'ampl_ic': ampl_ic,
 		'lic': lic,
@@ -84,18 +86,14 @@ def histograma(
 	data: list,
 	cols = 0,
 	titulo = 'Histograma',
-	label_x = '',
-	label_y = 'Freq',
+	label_x = None,
+	label_y = None,
 	linea = False
 ):
-	if cols <= 0:
-		cols = int(round(1 + 3.322 * math.log(len(data), 10), 0))
-
 	plt.hist(
 		data,
-		bins = cols,
-		density = False,
-		label = label_x if label_x else None
+		bins = cols if cols <= 0 else 'sturges',
+		density = False
 	)
 
 	if linea:
