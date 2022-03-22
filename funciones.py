@@ -92,7 +92,7 @@ def histograma(
 ):
 	plt.hist(
 		data,
-		bins = cols if cols <= 0 else 'sturges',
+		bins = cols if cols > 0 else 'sturges',
 		density = False
 	)
 
