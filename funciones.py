@@ -13,7 +13,7 @@ def unique(lista):
 		# check if exists in unique_list or not
 		if x not in unique_list:
 			unique_list.append(x)
-	return unique_list
+	return sorted(unique_list)
 
 # agrupar datos en tabla de frecuencias
 def agrupar_datos(lista: list) -> List[tuple]:

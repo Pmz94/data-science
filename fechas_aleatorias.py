@@ -38,4 +38,4 @@ for fecha in sorted(fechas, reverse = True):
 	# if dd.year > 2005: dd = dd.replace(year = dd.year - 100)
 	nueva_fecha = dd.strftime('%d de %b de %Y')
 	edad = calcular_edad(dd.date())
-	print(fecha, 'tiene', edad, 'años', f'(Nacio en {nueva_fecha})')
+	print(f'{fecha} tiene {edad} años (Nacio en {nueva_fecha})')
