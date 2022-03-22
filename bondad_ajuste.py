@@ -1,5 +1,6 @@
 import funciones
 from fitter import Fitter, get_common_distributions
+from scipy.stats import norm
 
 # se observa y se anotan los tiempos en segundos en los que tarda un programa en ejecutarse
 # la distribucion normal seria la mas apropiada para estos tiempos?
@@ -35,9 +36,19 @@ funciones.histograma(
 )
 """
 
-# normalizar los datos
-# z = [(x - media) / desv for x in tiempos]
-# print(z)
+x2c = []
+for x in sorted(tiempos):
+	# frecuencia observada
+	oi = tiempos.count(x)
+	# normalizar los datos
+	z = (x - resumen['media']) / resumen['desv']
+	# probabilidad de z
+	p = norm.cdf(z)
+	# frecuencia esperada
+	ei = p * resumen['n']
+	# x2 calculada
+	x2c.append((oi-ei) ** 2 / ei)
+x2c = sum(x2c)
 
 print('Ajustando datos a distribuciones')
 f = Fitter(tiempos, distributions = get_common_distributions())
