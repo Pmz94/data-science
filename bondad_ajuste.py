@@ -1,6 +1,7 @@
 import funciones
 from fitter import Fitter, get_common_distributions
 import numpy as np
+import pandas as pd
 import scipy.stats as st
 
 # se observa y se anotan los tiempos en segundos en los que tarda un programa en ejecutarse
@@ -34,18 +35,26 @@ funciones.histograma(
 )
 
 li = min(tiempos) - 0.005
-ls = max(tiempos) + 0.005
-l = np.arange(li, ls, 0.010)
-print(l)
+ls = max(tiempos)
+intervalo = np.arange(li, ls, 0.010)
+intervalo = np.append(intervalo, np.inf)
+intervalo = np.delete(intervalo, 0)
+intervalo = np.insert(intervalo, 0, -np.inf)
+intervalo = intervalo.tolist()
+# print(intervalo)
 
-clases = 11
-intervalo = []
-for i in range(1, 12):
-	val = st.norm.ppf(i / clases, resumen['media'], resumen['desv'])
-	intervalo.append(val)
-intervalo.insert(0, -np.inf)
-print(intervalo)
+# clases = 11
+# intervalo = []
+# for i in range(1, 12):
+# 	val = st.norm.ppf(i / clases, resumen['media'], resumen['desv'])
+# 	intervalo.append(val)
+# intervalo.insert(0, -np.inf)
+# print(intervalo)
 
+df = pd.DataFrame({'lim_inf': intervalo[:-1], 'lim_sup': intervalo[1:]})
+df['oi'] = df.apply(lambda x: sum([x['lim_inf'] < i <= x['lim_sup'] for i in sorted(tiempos)]), axis = 1)
+# df['ei'] = 5
+print(df)
 
 """
 x2c = []
