@@ -1,8 +1,17 @@
 import math
+import random as rm
 import numpy as np
 import scipy.stats as st
 from typing import List
 import matplotlib.pyplot as plt
+import prettytable as pt
+from itertools import groupby
+
+def tirar_moneda(n = 1):
+	lista_intentos = [] # definicion multiple
+	for _ in range(n): # haga esto n intentos
+		lista_intentos.append(rm.choice(['aguila', 'sello']))
+	return lista_intentos
 
 def unique(lista):
 	"""Obtener los valores unicos de una lista"""
@@ -85,7 +94,7 @@ def estadistica_descriptiva(x: list):
 def histograma(
 	data: list,
 	cols = 0,
-	titulo = 'Histograma',
+	titulo = None,
 	label_x = None,
 	label_y = None,
 	linea = False
@@ -97,9 +106,9 @@ def histograma(
 	)
 
 	if linea:
-		mn, mx = plt.xlim()
-		plt.xlim(mn, mx)
-		kde_xs = np.linspace(mn, mx)
+		min_lim, max_lim = plt.xlim()
+		plt.xlim(min_lim, max_lim)
+		kde_xs = np.linspace(min_lim, max_lim)
 		kde = st.gaussian_kde(data)
 		plt.plot(kde_xs, kde.pdf(kde_xs), label = 'Tendencia')
 		plt.legend(loc = 'upper left')
@@ -109,7 +118,19 @@ def histograma(
 	if label_y: plt.ylabel(label_y)
 	plt.show()
 
-# funcion crear graficas de series de tiempo
+def diagrama_tallo_hoja(x: list):
+	table = pt.PrettyTable()
+	table.field_names = ['Tallo', 'Hoja', 'Freq']
+	table.align['Tallo'] = 'r'
+	table.align['Hoja'] = 'l'
+	table.align['Freq'] = 'c'
+	for tallo, g in groupby(sorted(x), key = lambda a: int(a) // 10):
+		lst = map(str, [int(y) % 10 for y in list(g)])
+		hoja = ' '.join(lst)
+		freq = sum(c.isdigit() for c in hoja)
+		table.add_row([tallo, hoja, freq])
+	print(table.get_string())
+
 def grafica_serie_tiempo(
 	ejex: List[int], ejey: List[int],
 	etiquetax = 'Tiempo',
