@@ -81,3 +81,5 @@ widgetsnbextension==3.6.0
 zipp==3.7.0
 seaborn
 faker
+geopy
+timezonefinder
