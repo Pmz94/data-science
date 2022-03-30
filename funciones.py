@@ -1,7 +1,5 @@
-import datetime as dt
 import math
 import random as rm
-import re
 from itertools import groupby
 from typing import List, Union
 import matplotlib.pyplot as plt
@@ -178,75 +176,3 @@ def crappyhist(data: list, bins = 0, width = 140):
 			)
 		)
 	print('{:12.5f} |'.format(b[bins]))
-
-
-def sacar_curp(nombre: str, apellido_paterno: str, apellido_materno: str, sexo: str, fecha_nac: Union[str, dt.datetime], estado_nac: str) -> str:
-	if isinstance(fecha_nac, str):
-		fecha_nac = dt.datetime.strptime(fecha_nac, '%Y-%m-%d')
-	nombre = quitar_acentos(nombre)
-	apellido_paterno = quitar_acentos(apellido_paterno)
-	apellido_materno = quitar_acentos(apellido_materno)
-	estado_nac = quitar_acentos(estado_nac)
-	# Primera letra y vocal del primer apellido
-	curp = apellido_paterno[0:2].upper()
-	# Primera letra del segundo apellido
-	curp += apellido_materno[0:1].upper()
-	# Primera letra del nombre de pila
-	curp += nombre[0:1].upper()
-	# Fecha de nacimiento (2 últimos dígitos del año, 2 del mes y 2 del día de nacimiento)
-	curp += fecha_nac.strftime('%y%m%d')
-	# Letra del sexo (H o M)
-	curp += sexo[0:1].upper()
-	# Dos letras correspondientes a la entidad de nacimiento (Sonora => SR)
-	# en el caso de extranjeros, se marca como NE (Nacido Extranjero)
-	clave_estados = {
-		'aguascalientes': 'AS',
-		'baja_california': 'BC',
-		'baja_california_sur': 'BS',
-		'campeche': 'CC',
-		'coahuila': 'CL',
-		'colima': 'CM',
-		'chiapas': 'CS',
-		'chihuahua': 'CH',
-		'distrito_federal': 'DF',
-		'ciudad_de_mexico': 'DF',
-		'durango': 'DG',
-		'guanajuato': 'GT',
-		'guerrero': 'GR',
-		'hidalgo': 'HG',
-		'jalisco': 'JC',
-		'mexico': 'MC',
-		'estado_de_mexico': 'MC',
-		'michoacan': 'MN',
-		'morelos': 'MS',
-		'nayarit': 'NT',
-		'nuevo_leon': 'NL',
-		'oaxaca': 'OC',
-		'puebla': 'PL',
-		'queretaro': 'QT',
-		'quintana_roo': 'QR',
-		'san_luis_potosi': 'SP',
-		'sinaloa': 'SL',
-		'sonora': 'SR',
-		'tabasco': 'TC',
-		'tamaulipas': 'TS',
-		'tlaxcala': 'TL',
-		'veracruz': 'VZ',
-		'yucatan': 'YN',
-		'zacatecas': 'ZS'
-	}
-	clave_estado_nac = clave_estados[estado_nac.replace(' ', '_').lower()]
-	curp += clave_estado_nac
-	# Primera consonante interna del primer apellido
-	pcap = re.sub(f'[aeiou]', '', apellido_paterno)[1:2].upper()
-	curp += pcap if pcap != 'Ñ' else 'X'
-	# Primera consonante interna del segundo apellido
-	curp += re.sub(f'[aeiou]', '', apellido_materno)[1:2].upper()
-	# Primera consonante interna del nombre
-	curp += re.sub(f'[aeiou]', '', nombre)[1:2].upper()
-	# Dígito verificador del 0-9 para fechas de nacimiento hasta el año 1999 y A-Z para fechas de nacimiento a partir del 2000
-	int_char = [rm.randint(0, 9), chr(rm.randint(65, 90))]
-	curp += str(int_char[0] if fecha_nac.year <= 1999 else int_char[1])
-	# Homoclave, para evitar duplicaciones
-	curp += str(rm.randint(0, 9))
-	return curp

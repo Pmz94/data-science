@@ -865,7 +865,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 13,Hidalgo,Bomintzha,773,,
 13,Hidalgo,Calnali,774,,
 13,Hidalgo,Caltimacán,759,,
-13,Hidalgo,Cerro Colorado,774,,
+13,Hidalgo,Cerro Colorado,774,20.0647694,-98.9529112
 13,Hidalgo,Ciudad Sahagún,791,,
 13,Hidalgo,Col. 28 de Mayo (Santa Rosa),775,,
 13,Hidalgo,Cruz Azul San Miguel Vindho,773,,
@@ -1567,7 +1567,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 16,Michoacan,Santiago Tangamandapio,383,,
 16,Michoacan,Santiago Tingambato,423,,
 16,Michoacan,Santiago Undameo,443,,
-16,Michoacan,Senguio,786,,
+16,Michoacan,Senguio,786,19.746455599999997,-100.34736001879881
 16,Michoacan,Susupuato de Guerrero,786,,
 16,Michoacan,Tacámbaro,459,,
 16,Michoacan,Tancítaro,425,19.3544253,-102.3704938424678
@@ -1629,7 +1629,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 17,Morelos,Felipe Neri (Cuatepec),735,,
 17,Morelos,Fracc. Kunetzin de los Volcan,735,,
 17,Morelos,Huajintlán,751,18.6096643,-99.425394
-17,Morelos,Huecahuasco,731,,
+17,Morelos,Huecahuasco,731,18.937993,-98.7819251
 17,Morelos,Huitchila,769,18.6293743,-98.8980205
 17,Morelos,Huitzilac,739,19.058623150000003,-99.232120718479
 17,Morelos,Jiutepec,777,,
@@ -1768,7 +1768,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 19,Nuevo Leon,Garza Ayala,824,,
 19,Nuevo Leon,Garza González,823,,
 19,Nuevo Leon,General Bravo,823,25.82439655,-98.88351747852514
-19,Nuevo Leon,General Terán,826,,
+19,Nuevo Leon,General Terán,826,25.27065815,-99.408929242635
 19,Nuevo Leon,General Treviño,892,,
 19,Nuevo Leon,General Zaragoza,826,,
 19,Nuevo Leon,General Zuazua,825,,
@@ -2018,7 +2018,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 21,Puebla,San Lucas El Grande,248,19.3065223,-98.4788697
 21,Puebla,San Lucas Tulcingo (Tulcingo),244,,
 21,Puebla,San Luis Tehuiloyocan,222,,
-21,Puebla,San Martín Texmelucan,248,,
+21,Puebla,San Martín Texmelucan,248,19.2659835,-98.42487795456853
 21,Puebla,San Martinito,222,,
 21,Puebla,San Miguel Canoa,222,,
 21,Puebla,San Miguel Tenextatiloyan,233,,
@@ -2106,7 +2106,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 22,Queretaro,Jalpan de Serra,441,,
 22,Queretaro,Jurica (Ex-Hacienda),442,,
 22,Queretaro,Juriquilla,442,,
-22,Queretaro,"La ""d""",448,,
+22,Queretaro,"La ""d""",448,20.4402312,-100.1536165
 22,Queretaro,La Cañada,442,,
 22,Queretaro,La Estancia,427,20.4212521,-100.064687
 22,Queretaro,La Fuente,414,20.5511155,-100.0356317
@@ -2121,7 +2121,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 22,Queretaro,San Joaquín,441,,
 22,Queretaro,San Juan del Río,427,20.38704625,-100.01196274827622
 22,Queretaro,Santa Rosa Jáuregui,442,20.7417769,-100.447199
-22,Queretaro,Tequisquiapan,414,20.542215849999998,-99.94789872743917
+22,Queretaro,Tequisquiapan,414,20.54221585,-99.94789872743917
 22,Queretaro,Tlacote El Bajo,442,,
 22,Queretaro,Vizarrón de Montes,441,20.8325018,-99.7198021
 23,Quintana Roo,Akumal,984,20.396826,-87.314288
@@ -2375,6 +2375,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 26,Sonora,Etchoropo,647,,
 26,Sonora,Fronteras,633,,
 26,Sonora,Golfo de Santa Clara,653,,
+26,Sonora,Granados,634,,
 26,Sonora,Guadalupe (Guadalupe de Ures),623,29.3837951,-110.4482946
 26,Sonora,Guaymas,622,,
 26,Sonora,Hermosillo,662,,
@@ -2427,9 +2428,9 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 26,Sonora,Sasabe,637,,
 26,Sonora,Sonoita,651,31.863444,-112.849739
 26,Sonora,Tepache,634,29.4858413,-109.52796594163596
-26,Sonora,Trincheras,641,30.286502650000003,-111.65299366821108
+26,Sonora,Trincheras,641,30.399444,-111.530833
 26,Sonora,Ures,623,,
-26,Sonora,Vicam (Switch),643,,
+26,Sonora,Vícam,643,,
 26,Sonora,Villa Hidalgo,634,,
 26,Sonora,Yávaros (Isla Las Viejas),647,,
 26,Sonora,Yecora,623,,
@@ -2446,7 +2447,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 27,Tabasco,Emiliano Zapata,934,,
 27,Tabasco,Estación Chontalpa,917,17.6659273,-93.4810105
 27,Tabasco,Frontera,913,,
-27,Tabasco,Huimanguillo,917,,
+27,Tabasco,Huimanguillo,917,17.7620967,-93.66344080511583
 27,Tabasco,Jalapa,932,17.77080775,-92.80215155741588
 27,Tabasco,Jalpa de Méndez,914,,
 27,Tabasco,Jonuta,913,,
