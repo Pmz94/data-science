@@ -1,17 +1,26 @@
+import datetime as dt
 import math
 import random as rm
-import numpy as np
-import scipy.stats as st
-from typing import List
-import matplotlib.pyplot as plt
-import prettytable as pt
+import re
 from itertools import groupby
+from typing import List, Union
+import matplotlib.pyplot as plt
+import numpy as np
+import prettytable as pt
+import scipy.stats as st
+import unicodedata
+
+
+def quitar_acentos(s):
+	return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
+
 
 def tirar_moneda(n = 1):
-	lista_intentos = [] # definicion multiple
-	for _ in range(n): # haga esto n intentos
+	lista_intentos = []  # definicion multiple
+	for _ in range(n):  # haga esto n intentos
 		lista_intentos.append(rm.choice(['aguila', 'sello']))
 	return lista_intentos
+
 
 def unique(lista):
 	"""Obtener los valores unicos de una lista"""
@@ -23,6 +32,7 @@ def unique(lista):
 		if x not in unique_list:
 			unique_list.append(x)
 	return sorted(unique_list)
+
 
 # agrupar datos en tabla de frecuencias
 def agrupar_datos(lista: list) -> List[tuple]:
@@ -39,6 +49,7 @@ def agrupar_datos(lista: list) -> List[tuple]:
 	freq = sorted(dict_items)
 	return freq
 
+
 # desagrupar datos
 def desagrupar_datos(lista: List[tuple]) -> list:
 	datos_desagrupados = []
@@ -46,6 +57,7 @@ def desagrupar_datos(lista: List[tuple]) -> list:
 		for _ in range(tupla[1]):
 			datos_desagrupados.append(tupla[0])
 	return datos_desagrupados
+
 
 def estadistica_descriptiva(x: list):
 	n = len(x)
@@ -91,6 +103,7 @@ def estadistica_descriptiva(x: list):
 		'lsc': lsc
 	}
 
+
 def histograma(
 	data: list,
 	cols = 0,
@@ -118,6 +131,7 @@ def histograma(
 	if label_y: plt.ylabel(label_y)
 	plt.show()
 
+
 def diagrama_tallo_hoja(x: list):
 	table = pt.PrettyTable()
 	table.field_names = ['Tallo', 'Hoja', 'Freq']
@@ -130,6 +144,7 @@ def diagrama_tallo_hoja(x: list):
 		freq = sum(c.isdigit() for c in hoja)
 		table.add_row([tallo, hoja, freq])
 	print(table.get_string())
+
 
 def grafica_serie_tiempo(
 	ejex: List[int], ejey: List[int],
@@ -144,6 +159,7 @@ def grafica_serie_tiempo(
 	plt.xlabel(etiquetax)
 	plt.ylabel(etiquetay)
 	plt.show()
+
 
 def crappyhist(data: list, bins = 0, width = 140):
 	if bins <= 0:
@@ -162,3 +178,75 @@ def crappyhist(data: list, bins = 0, width = 140):
 			)
 		)
 	print('{:12.5f} |'.format(b[bins]))
+
+
+def sacar_curp(nombre: str, apellido_paterno: str, apellido_materno: str, sexo: str, fecha_nac: Union[str, dt.datetime], estado_nac: str) -> str:
+	if isinstance(fecha_nac, str):
+		fecha_nac = dt.datetime.strptime(fecha_nac, '%Y-%m-%d')
+	nombre = quitar_acentos(nombre)
+	apellido_paterno = quitar_acentos(apellido_paterno)
+	apellido_materno = quitar_acentos(apellido_materno)
+	estado_nac = quitar_acentos(estado_nac)
+	# Primera letra y vocal del primer apellido
+	curp = apellido_paterno[0:2].upper()
+	# Primera letra del segundo apellido
+	curp += apellido_materno[0:1].upper()
+	# Primera letra del nombre de pila
+	curp += nombre[0:1].upper()
+	# Fecha de nacimiento (2 últimos dígitos del año, 2 del mes y 2 del día de nacimiento)
+	curp += fecha_nac.strftime('%y%m%d')
+	# Letra del sexo (H o M)
+	curp += sexo[0:1].upper()
+	# Dos letras correspondientes a la entidad de nacimiento (Sonora => SR)
+	# en el caso de extranjeros, se marca como NE (Nacido Extranjero)
+	clave_estados = {
+		'aguascalientes': 'AS',
+		'baja_california': 'BC',
+		'baja_california_sur': 'BS',
+		'campeche': 'CC',
+		'coahuila': 'CL',
+		'colima': 'CM',
+		'chiapas': 'CS',
+		'chihuahua': 'CH',
+		'distrito_federal': 'DF',
+		'ciudad_de_mexico': 'DF',
+		'durango': 'DG',
+		'guanajuato': 'GT',
+		'guerrero': 'GR',
+		'hidalgo': 'HG',
+		'jalisco': 'JC',
+		'mexico': 'MC',
+		'estado_de_mexico': 'MC',
+		'michoacan': 'MN',
+		'morelos': 'MS',
+		'nayarit': 'NT',
+		'nuevo_leon': 'NL',
+		'oaxaca': 'OC',
+		'puebla': 'PL',
+		'queretaro': 'QT',
+		'quintana_roo': 'QR',
+		'san_luis_potosi': 'SP',
+		'sinaloa': 'SL',
+		'sonora': 'SR',
+		'tabasco': 'TC',
+		'tamaulipas': 'TS',
+		'tlaxcala': 'TL',
+		'veracruz': 'VZ',
+		'yucatan': 'YN',
+		'zacatecas': 'ZS'
+	}
+	clave_estado_nac = clave_estados[estado_nac.replace(' ', '_').lower()]
+	curp += clave_estado_nac
+	# Primera consonante interna del primer apellido
+	pcap = re.sub(f'[aeiou]', '', apellido_paterno)[1:2].upper()
+	curp += pcap if pcap != 'Ñ' else 'X'
+	# Primera consonante interna del segundo apellido
+	curp += re.sub(f'[aeiou]', '', apellido_materno)[1:2].upper()
+	# Primera consonante interna del nombre
+	curp += re.sub(f'[aeiou]', '', nombre)[1:2].upper()
+	# Dígito verificador del 0-9 para fechas de nacimiento hasta el año 1999 y A-Z para fechas de nacimiento a partir del 2000
+	int_char = [rm.randint(0, 9), chr(rm.randint(65, 90))]
+	curp += str(int_char[0] if fecha_nac.year <= 1999 else int_char[1])
+	# Homoclave, para evitar duplicaciones
+	curp += str(rm.randint(0, 9))
+	return curp
