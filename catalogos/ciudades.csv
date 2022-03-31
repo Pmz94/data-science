@@ -185,7 +185,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 5,Coahuila,Minas de Barroterán,864,27.652802,-101.2821301
 5,Coahuila,Monclova,866,,
 5,Coahuila,Morelos,862,,
-5,Coahuila,Muzquiz,864,,
+5,Coahuila,Muzquiz,864,27.8787547,-101.5159425
 5,Coahuila,Nava,862,,
 5,Coahuila,Nueva Rosita,861,,
 5,Coahuila,Ocampo,869,28.05294585,-102.97291032587704
@@ -452,7 +452,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 8,Chihuahua,Villa Ahumada y Anexas,656,,
 8,Chihuahua,Villa Aldama,614,,
 8,Chihuahua,Villa López,629,,
-9,Ciudad de Mexico,Ciudad de México,55,,
+9,Ciudad de Mexico,Ciudad de México,55,19.4326296,-99.1331785
 9,Ciudad de Mexico,San Antonio Tecomitl,55,19.217598,-98.9940679
 9,Ciudad de Mexico,San Juan Ixtayopan,55,,
 9,Ciudad de Mexico,San Lorenzo Acopilco,55,,
@@ -462,7 +462,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 9,Ciudad de Mexico,San Pedro Atocpan,55,,
 9,Ciudad de Mexico,Santa Catarina Yecahuitzotl,55,,
 10,Durango,Abasolo,677,,
-10,Durango,Antonio Amaro,676,,
+10,Durango,Antonio Amaro,676,24.276728,-104.0178615
 10,Durango,Bermejillo,872,,
 10,Durango,Canatlán,677,,
 10,Durango,Canelas,674,,
@@ -476,7 +476,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 10,Durango,Cuéncame de Ceniceros,671,,
 10,Durango,Diez de Octubre,677,,
 10,Durango,Donato Guerra,677,,
-10,Durango,Durango,618,,
+10,Durango,Durango,618,24.022008,-104.6547415
 10,Durango,Ejido Revolución (Las Víboras),629,,
 10,Durango,El Compás,871,,
 10,Durango,El Lucero (Arcinas),872,,
@@ -491,7 +491,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 10,Durango,Gral.Felipe Carrillo Puerto,676,,
 10,Durango,Guadalupe Victoria,676,,
 10,Durango,Guanacevi,674,,
-10,Durango,Guatimape,677,,
+10,Durango,Guatimape,677,24.80735,-104.9195134
 10,Durango,Ignacio Allende,676,25.7411844,-105.1018215
 10,Durango,Ignacio Ramírez,676,,
 10,Durango,Inde,649,,
@@ -515,7 +515,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 10,Durango,Nuevo San Diego Tensaenz,674,,
 10,Durango,Otaez,674,,
 10,Durango,Pánuco de Coronado,676,24.5059958,-104.36226449193477
-10,Durango,Paso Nacional,671,,
+10,Durango,Paso Nacional,671,25.2640653,-104.0193234
 10,Durango,Pedriceña (Estación Pedriceña),671,25.1160366,-103.7910985
 10,Durango,Peñon Blanco,676,24.76912125,-104.04282452819798
 10,Durango,Ramón Corona,676,,
@@ -685,7 +685,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 11,Guanajuato,San Miguel Emenguaro,466,,
 11,Guanajuato,San Miguel Octopan,461,,
 11,Guanajuato,San Nicolás de la Condesa,466,,
-11,Guanajuato,San Nicolás de los Agustinos,466,,
+11,Guanajuato,San Nicolás de los Agustinos,466,20.2462127,-100.9655489
 11,Guanajuato,San Pablo Casacuarán,411,,
 11,Guanajuato,San Pablo Pejo (San Pablo),466,,
 11,Guanajuato,San Pedro de los Naranjos,466,,
@@ -844,7 +844,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 12,Guerrero,Xochipala,747,,
 12,Guerrero,Xochistlahuaca,741,,
 12,Guerrero,Zacacoyuca,733,,
-12,Guerrero,Zacapalco,727,,
+12,Guerrero,Zacapalco,727,18.5372174,-99.4432427
 12,Guerrero,Zacapuato,732,,
 12,Guerrero,Zacatipa,757,,
 12,Guerrero,Zacualpan,742,,
@@ -1327,7 +1327,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 15,Estado de Mexico,San Miguel,714,,
 15,Estado de Mexico,San Pablo Atlazalpan,55,,
 15,Estado de Mexico,San Pablo Autopan,722,,
-15,Estado de Mexico,San Pedro Atlapulco,728,,
+15,Estado de Mexico,San Pedro Atlapulco,728,19.2435369,-99.3938513
 15,Estado de Mexico,San Pedro los Baños,712,,
 15,Estado de Mexico,San Pedro Totoltepec,722,,
 15,Estado de Mexico,San Sebastián,712,,
@@ -1448,7 +1448,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 16,Michoacan,Chilchota,355,,
 16,Michoacan,Chucándiro,443,,
 16,Michoacan,Churintzio,328,,
-16,Michoacan,Dieciocho de Marzo,426,,
+16,Michoacan,Dieciocho de Marzo,426,19.2311059,-102.7061034
 16,Michoacan,Ecuandureo,328,,
 16,Michoacan,El Ahuaje,424,,
 16,Michoacan,El Capulín,328,,
@@ -1567,7 +1567,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 16,Michoacan,Santiago Tangamandapio,383,,
 16,Michoacan,Santiago Tingambato,423,,
 16,Michoacan,Santiago Undameo,443,,
-16,Michoacan,Senguio,786,19.746455599999997,-100.34736001879881
+16,Michoacan,Senguio,786,19.7464556,-100.3473600187988
 16,Michoacan,Susupuato de Guerrero,786,,
 16,Michoacan,Tacámbaro,459,,
 16,Michoacan,Tancítaro,425,19.3544253,-102.3704938424678
@@ -1575,7 +1575,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 16,Michoacan,Tanhuato de Guerrero,356,,
 16,Michoacan,Taretán,422,,
 16,Michoacan,Tarímbaro,443,,
-16,Michoacan,Tepalcatepec,424,,
+16,Michoacan,Tepalcatepec,424,19.1920558,-102.8453959
 16,Michoacan,Ticuitaco (Tocuitaco),352,,
 16,Michoacan,Tinaja de Vargas,356,,
 16,Michoacan,Tinguindín,354,,
@@ -1668,7 +1668,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 17,Morelos,Tlayecac,735,,
 17,Morelos,Totolapan,735,,
 17,Morelos,Xaloxtoc,735,,
-17,Morelos,Xochitepec,777,,
+17,Morelos,Xochitepec,777,18.7831747,-99.2308448
 17,Morelos,Xoxocotla,734,,
 17,Morelos,Yautepec,735,,
 17,Morelos,Yecapixtla,731,,
@@ -1803,7 +1803,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 19,Nuevo Leon,Villa Aldama,829,25.0724459,-99.0010056
 19,Nuevo Leon,Villa de Paras,892,,
 19,Nuevo Leon,Villas Campestres,81,,
-20,Oaxaca,Acatlán de Pérez Figueroa,274,,
+20,Oaxaca,Acatlán de Pérez Figueroa,274,18.538889,-96.605556
 20,Oaxaca,Asunción Ixtaltepec,971,,
 20,Oaxaca,Asunción Nochixtlán,951,,
 20,Oaxaca,Bahía de Huatulco(crucesita),958,,
@@ -1869,7 +1869,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 20,Oaxaca,San Martín Peras,953,,
 20,Oaxaca,San Miguel Sola de Vega,951,,
 20,Oaxaca,San Pablo Huitzo,951,,
-20,Oaxaca,San Pedro Amuzgos,954,,
+20,Oaxaca,San Pedro Amuzgos,954,16.6537721,-98.0896939
 20,Oaxaca,San Pedro Apóstol,951,,
 20,Oaxaca,San Pedro Comitancillo,971,,
 20,Oaxaca,San Pedro de Tututepec,954,,
@@ -2018,7 +2018,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 21,Puebla,San Lucas El Grande,248,19.3065223,-98.4788697
 21,Puebla,San Lucas Tulcingo (Tulcingo),244,,
 21,Puebla,San Luis Tehuiloyocan,222,,
-21,Puebla,San Martín Texmelucan,248,19.2659835,-98.42487795456853
+21,Puebla,San Martín Texmelucan,248,19.2659835,-98.42487795456852
 21,Puebla,San Martinito,222,,
 21,Puebla,San Miguel Canoa,222,,
 21,Puebla,San Miguel Tenextatiloyan,233,,
@@ -2085,7 +2085,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 21,Puebla,Zacapala,224,,
 21,Puebla,Zacapoaxtla,233,,
 21,Puebla,Zacatlán,797,,
-21,Puebla,Zapotitlán Salinas,237,,
+21,Puebla,Zapotitlán Salinas,237,18.3292237,-97.4735996
 21,Puebla,Zaragoza,233,,
 22,Queretaro,Amealco,448,,
 22,Queretaro,Arroyo Seco,487,,
@@ -2143,7 +2143,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 23,Quintana Roo,Kantunilkin,984,21.1016621,-87.4869165
 23,Quintana Roo,Leona Vicario,998,20.9896805,-87.2039926
 23,Quintana Roo,Morocoy,983,18.6041464,-88.8109129
-23,Quintana Roo,Nicolás Bravo,983,,
+23,Quintana Roo,Nicolás Bravo,983,18.4594639,-88.9280526
 23,Quintana Roo,Nuevo Xcan,984,,
 23,Quintana Roo,Playa del Carmen,984,,
 23,Quintana Roo,Puerto Aventuras,984,,
@@ -2177,7 +2177,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 24,San Luis Potosí,Exhacienda de Jesús María,485,,
 24,San Luis Potosí,Hernández,458,,
 24,San Luis Potosí,Huichihuayan,482,21.4840905,-98.9704833
-24,San Luis Potosí,La Paz,488,,
+24,San Luis Potosí,La Paz,488,23.675778,-100.7125775
 24,San Luis Potosí,Matehuala,488,,
 24,San Luis Potosí,Matlapa,483,21.3326481,-98.81882979792266
 24,San Luis Potosí,Mexquitic de Carmona,444,,
@@ -2267,7 +2267,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 25,Sinaloa,El Espinal,696,,
 25,Sinaloa,El Fuerte,698,,
 25,Sinaloa,El Huitussi,687,,
-25,Sinaloa,El Pitahayal,687,,
+25,Sinaloa,El Pitahayal,687,25.4703424,-108.368484
 25,Sinaloa,El Potrero de Sataya,672,,
 25,Sinaloa,El Pozole,694,,
 25,Sinaloa,El Quelite,669,,
@@ -2366,11 +2366,11 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 26,Sonora,Ejido Francisco Javier Mina,643,,
 26,Sonora,Ejido La Victoria,662,,
 26,Sonora,Ejido Lagunitas,653,,
-26,Sonora,Chucarit,647,,
+26,Sonora,Chucarit,647,27.0301608,-109.5839288
 26,Sonora,Empalme,622,,
 26,Sonora,Esperanza,644,27.5791347,-109.9309737
 26,Sonora,Esqueda,633,,
-26,Sonora,Estación Llano,641,,
+26,Sonora,Estación Llano,641,30.3615886,-111.102753
 26,Sonora,Etchojoa,647,27.0459378,-109.677999559276
 26,Sonora,Etchoropo,647,,
 26,Sonora,Fronteras,633,,
@@ -2399,7 +2399,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 26,Sonora,Moctezuma,634,,
 26,Sonora,Naco,633,31.3229703,-109.9459547
 26,Sonora,Nacori Chico,634,,
-26,Sonora,Nacozari,634,,
+26,Sonora,Nacozari,634,30.3741074,-109.6898081
 26,Sonora,Navojoa,642,,
 26,Sonora,Nogales,631,,
 26,Sonora,Pesqueira,623,,
@@ -2447,9 +2447,9 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 27,Tabasco,Emiliano Zapata,934,,
 27,Tabasco,Estación Chontalpa,917,17.6659273,-93.4810105
 27,Tabasco,Frontera,913,,
-27,Tabasco,Huimanguillo,917,17.7620967,-93.66344080511583
+27,Tabasco,Huimanguillo,917,17.7620967,-93.66344080511584
 27,Tabasco,Jalapa,932,17.77080775,-92.80215155741588
-27,Tabasco,Jalpa de Méndez,914,,
+27,Tabasco,Jalpa de Méndez,914,18.1768312,-93.0629674
 27,Tabasco,Jonuta,913,,
 27,Tabasco,La Venta,923,18.1032381,-94.0409540427047
 27,Tabasco,Macultepec-Ocuiltzapotlan,993,,
@@ -2482,7 +2482,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 28,Tamaulipas,Ciudad Camargo,891,,
 28,Tamaulipas,Ciudad Madero,833,,
 28,Tamaulipas,Ciudad Mante,831,22.7411278,-98.9714093
-28,Tamaulipas,Ciudad Mier,897,,
+28,Tamaulipas,Ciudad Mier,897,26.4299724,-99.151986
 28,Tamaulipas,Ciudad Miguel Alemán,897,26.4032518,-99.0202676
 28,Tamaulipas,Ciudad Victoria,834,,
 28,Tamaulipas,Ejido Germinal,833,,
@@ -2537,7 +2537,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 28,Tamaulipas,Villa Aldama,836,,
 28,Tamaulipas,Villa de Méndez,841,,
 28,Tamaulipas,Villagrán,835,,
-28,Tamaulipas,Xicoténcatl,832,,
+28,Tamaulipas,Xicoténcatl,832,22.996501,-98.9424417
 29,Tlaxcala,Altzayanca,276,19.4267173,-97.798279
 29,Tlaxcala,Apizaco,241,19.42643095,-98.07743344645613
 29,Tlaxcala,Benito Juárez,748,,
@@ -2741,7 +2741,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 30,Veracruz,Rodríguez Clara,283,,
 30,Veracruz,Saladero,768,,
 30,Veracruz,San Andrés Tuxtla,294,,
-30,Veracruz,San Antonio Tenextepec,282,,
+30,Veracruz,San Antonio Tenextepec,282,19.4854479,-97.2656863
 30,Veracruz,San Juan Evangelista,924,,
 30,Veracruz,San Rafael,235,,
 30,Veracruz,Santiago de la Peña,783,,
@@ -2750,7 +2750,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 30,Veracruz,Soledad de Doblado,285,,
 30,Veracruz,Suchilapan del Río,924,,
 30,Veracruz,Sumidero,272,,
-30,Veracruz,Tamalín,768,,
+30,Veracruz,Tamalín,768,21.3381931,-97.8128272
 30,Veracruz,Tamiahua,768,,
 30,Veracruz,Tamos,846,,
 30,Veracruz,Tampico Alto,833,,
@@ -2801,7 +2801,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 31,Yucatan,Cacalchen,991,20.98359715,-89.24315542773434
 31,Yucatan,Cansahcab,991,,
 31,Yucatan,Caucel,999,21.0168202,-89.7063596
-31,Yucatan,Celestun,988,,
+31,Yucatan,Celestun,988,20.8604208,-90.3994361
 31,Yucatan,Cenotillo,991,,
 31,Yucatan,Colonia Yucatán,986,,
 31,Yucatan,Conkal,999,21.0750611,-89.52912137055156
@@ -2889,7 +2889,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 32,Zacatecas,Guadalupe,492,,
 32,Zacatecas,Hacienda Nueva,492,,
 32,Zacatecas,Hidalgo (Colonia Hidalgo),433,,
-32,Zacatecas,Huanusco,463,,
+32,Zacatecas,Huanusco,463,21.7722797,-102.9728798
 32,Zacatecas,Jalpa,463,21.6305514,-103.00769860218882
 32,Zacatecas,Jiménez del Teul,457,,
 32,Zacatecas,José María Morelos,457,,
@@ -2934,7 +2934,7 @@ id_estado,estado,ciudad,clave_lada,latitud,longitud
 32,Zacatecas,Santa Rita,498,,
 32,Zacatecas,Sauceda de la Borda,492,,
 32,Zacatecas,Sombrerete,433,,
-32,Zacatecas,Tabasco,463,,
+32,Zacatecas,Tabasco,463,21.8652701,-102.913063
 32,Zacatecas,Tacoaleche,492,,
 32,Zacatecas,Tayahua (San José de Tayahua),499,,
 32,Zacatecas,Tepechitlán,437,,
