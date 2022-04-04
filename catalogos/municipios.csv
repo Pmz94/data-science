@@ -1,4 +1,4 @@
-id_estado,id,cod_inegi,municipio
+id_estado,id,cve_inegi,municipio
 1,1,01001,Aguascalientes
 1,2,01002,Asientos
 1,3,01003,Calvillo
