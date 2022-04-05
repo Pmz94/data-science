@@ -4,12 +4,12 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 1,Aguascalientes,Real de Asientos,496,"(22.2381386, -102.0897755)","(22.1981386, -102.1297755)","(22.2781386, -102.0497755)"
 1,Aguascalientes,Calvillo,495,"(21.84962425, -102.71254273225466)",,
 1,Aguascalientes,Ciénaga Grande,496,,,
-1,Aguascalientes,Cosío,458,"(22.3705155, -102.3120085105234)",,
+1,Aguascalientes,Cosío,458,"(22.3664033, -102.3003739)","(22.3264033, -102.3403739)","(22.4064033, -102.2603739)"
 1,Aguascalientes,Emiliano Zapata,465,"(21.8562975, -102.2516532)",,
 1,Aguascalientes,General Ignacio Zaragoza,449,"(21.900753, -102.2991776)",,
 1,Aguascalientes,Gral. J. Ma. Morelos y Pavón,449,,,
 1,Aguascalientes,Jaltiche de Abajo,495,,,
-1,Aguascalientes,Jaltomate,449,"(22.0155972, -102.1423353)",,
+1,Aguascalientes,Jaltomate,449,"(22.0155972, -102.1423353)","(21.9755972, -102.1823353)","(22.0555972, -102.1023353)"
 1,Aguascalientes,Jesús María,449,"(21.9345555, -102.46845171651152)",,
 1,Aguascalientes,La Panadera,495,"(21.8645507, -102.6958159)","(21.8445507, -102.7158159)","(21.8845507, -102.6758159)"
 1,Aguascalientes,La Punta,458,"(21.8767387, -102.2813618)",,
@@ -219,7 +219,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 6,Colima,Chiapa,312,,,
 6,Colima,El Colomo,314,"(19.061614, -104.258904)","(19.021614, -104.298904)","(19.101614, -104.218904)"
 6,Colima,El Trapiche,312,"(19.2930588, -103.6497402)","(19.2915589, -103.6511153)","(19.2937625, -103.6488975)"
-6,Colima,Ixtlahuacán,313,"(18.95812855, -103.6858203896264)",,
+6,Colima,Ixtlahuacán,313,"(19.0017642, -103.7364431)","(18.9817642, -103.7564431)","(19.0217642, -103.7164431)"
 6,Colima,Los Tepames,312,"(19.093888888889, -103.6225)",,
 6,Colima,Madrid,313,"(19.08465, -103.8724664)",,
 6,Colima,Manzanillo,314,"(19.127656950000002, -104.28412563007706)","(18.9438067, -112.0723305)","(19.334994, -104.0230763)"
@@ -249,7 +249,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 7,Chiapas,Corazón de María,967,,,
 7,Chiapas,Cristóbal Obregón,965,,,
 7,Chiapas,Chamula,967,,,
-7,Chiapas,Chiapa de Corzo,961,,,
+7,Chiapas,Chiapa de Corzo,961,"(16.7075202, -93.0115045)","(16.6675202, -93.0515045)","(16.7475202, -92.9715045)"
 7,Chiapas,Chicomuselo,963,,,
 7,Chiapas,Chilón,919,,,
 7,Chiapas,El Ingenio Azucarero,964,,,
@@ -294,7 +294,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 7,Chiapas,Puerto Madero (San Benito),962,"(14.7189889, -92.4220816)","(14.7172498, -92.4235244)","(14.7206984, -92.420793)"
 7,Chiapas,Pujiltic,992,"(16.2767438, -92.4500858)",,
 7,Chiapas,Rancho Nuevo,967,,,
-7,Chiapas,Raudales Malpaso,968,,,
+7,Chiapas,Raudales Malpaso,968,"(17.1894261, -93.6064017)","(17.1494261, -93.6464017)","(17.2294261, -93.5664017)"
 7,Chiapas,Reforma,917,"(17.8581003, -93.155565)",,
 7,Chiapas,Revolución Mexicana,965,,,
 7,Chiapas,Salto de Agua,916,,,
@@ -1187,7 +1187,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 14,Jalisco,Unión de San Antonio,395,"(21.157614600000002, -102.00080128706158)","(21.03669, -102.2020574)","(21.2785676, -101.7737628)"
 14,Jalisco,Unión de Tula,316,,,
 14,Jalisco,Valle de Guadalupe,347,,,
-14,Jalisco,Valle de Juárez,382,,,
+14,Jalisco,Valle de Juárez,382,"(19.9335065, -102.9436531)","(19.8935065, -102.9836531)","(19.9735065, -102.9036531)"
 14,Jalisco,Villa Corona,387,"(20.38914285, -103.68552715478332)","(20.2433161, -103.7898761)","(20.5349992, -103.6129506)"
 14,Jalisco,Villa de Contla (Contla),358,,,
 14,Jalisco,Villa Guerrero,437,,,
@@ -1739,7 +1739,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 18,Nayarit,Tecuala,389,,,
 18,Nayarit,Tepic,311,"(21.5043446, -104.894676)",,
 18,Nayarit,Tepuzhuacán,324,,,
-18,Nayarit,Tetitlán,324,,,
+18,Nayarit,Tetitlán,324,"(21.1272042, -104.6152884)","(21.1072042, -104.6352884)","(21.1472042, -104.5952884)"
 18,Nayarit,Tuxpan,319,"(21.9926223, -105.4195939937585)","(21.849606, -105.590722)","(22.1366605, -105.2013201)"
 18,Nayarit,Valle de Banderas,329,,,
 18,Nayarit,Villa Hidalgo (El Nuevo),323,,,
@@ -1772,7 +1772,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 19,Nuevo Leon,García,81,"(25.8054661, -100.63964675280096)",,
 19,Nuevo Leon,Garza Ayala,824,"(25.811896, -100.5950709)","(25.8113247, -100.5950866)","(25.811896, -100.5950709)"
 19,Nuevo Leon,Garza González,823,"(25.8326512, -99.6255288)",,
-19,Nuevo Leon,General Bravo,823,"(25.82439655, -98.88351747852514)",,
+19,Nuevo Leon,General Bravo,823,"(25.7932962, -99.1811424)","(25.7532962, -99.2211424)","(25.8332962, -99.1411424)"
 19,Nuevo Leon,General Terán,826,"(25.27065815, -99.408929242635)",,
 19,Nuevo Leon,General Treviño,892,,,
 19,Nuevo Leon,General Zaragoza,826,"(23.8802692, -99.7402543685723)","(23.7235509, -100.0304239)","(24.0393669, -99.4568707)"
@@ -1899,7 +1899,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 20,Oaxaca,Santiago Chazumba,953,,,
 20,Oaxaca,Santiago Jamiltepec,954,,,
 20,Oaxaca,Santiago Juxtlahuaca,953,"(17.208558,-98.03835236545885)",,
-20,Oaxaca,Santiago Matatlán,951,,,
+20,Oaxaca,Santiago Matatlán,951,"(16.864722, -96.383611)","(16.844722, -96.403611)","(16.884722, -96.363611)"
 20,Oaxaca,Santiago Niltepec,994,,,
 20,Oaxaca,Santiago Yolomecatl,953,,,
 20,Oaxaca,Santo Domingo Chihuitán,971,,,
@@ -1908,7 +1908,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 20,Oaxaca,Santo Domingo Tonalá,953,,,
 20,Oaxaca,Santo Domingo Yanhuitlán,951,,,
 20,Oaxaca,Santo Domingo Zanatepec,994,"(16.440503, -94.34325912125554)",,
-20,Oaxaca,Santos Reyes Nopala,954,,,
+20,Oaxaca,Santos Reyes Nopala,954,"(16.106111, -97.144167)","(16.066111, -97.184167)","(16.146111, -97.104167)"
 20,Oaxaca,Silacayoapam,953,"(17.588497, -98.07167273448175)","(17.3797366, -98.3416054)","(17.7974522, -98.0230846)"
 20,Oaxaca,Soledad Etla,951,,,
 20,Oaxaca,Tehuantepec,971,,,
@@ -2143,7 +2143,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 23,Quintana Roo,Holbox,984,"(21.5221343, -87.3783129)",,
 23,Quintana Roo,Ignacio Zaragoza,984,,,
 23,Quintana Roo,Ingenio Alvaro Obregón,983,"(18.2691682, -88.6586514)","(18.2667817, -88.6723414)","(18.2744965, -88.641775)"
-23,Quintana Roo,Isla Mujeres,998,,,
+23,Quintana Roo,Isla Mujeres,998,"(21.2371906, -86.7350001)","(21.201541, -86.7525516)","(21.265481, -86.7106502)"
 23,Quintana Roo,José María Morelos,997,"(19.7071786, -88.77813435962864)","(19.2266082, -89.2965618)","(20.1900779, -88.3914218)"
 23,Quintana Roo,Kantunilkin,984,"(21.1016621, -87.4869165)","(21.0870632, -87.4978061)","(21.1143287, -87.4767955)"
 23,Quintana Roo,Leona Vicario,998,"(20.9896805, -87.2039926)","(20.9496805, -87.2439926)","(21.0296805, -87.1639926)"
@@ -2262,7 +2262,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 25,Sinaloa,Chihuahuita,668,,,
 25,Sinaloa,Choix,698,,,
 25,Sinaloa,Dimas (Estación Dimas),696,,,
-25,Sinaloa,Ejido El Quemadito,667,"(24.6974986, -107.4155818)",,
+25,Sinaloa,Ejido El Quemadito,667,"(24.6974986, -107.4155818)","(24.6774986, -107.4355818)","(24.7174986, -107.3955818)"
 25,Sinaloa,El Bolillo,696,,,
 25,Sinaloa,El Burrión,687,,,
 25,Sinaloa,El Castillo (Mpio. Mazatlán),669,,,
@@ -2498,7 +2498,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 28,Tamaulipas,Villa Manuel,836,"(25.8928654, -97.8183269)","(25.8728654, -97.8383269)","(25.9128654, -97.7983269)"
 28,Tamaulipas,Estación Santa Engracia,835,"(24.0137951, -99.2010312)","(23.9737951, -99.2410312)","(24.0537951, -99.1610312)"
 28,Tamaulipas,Fortines y Emiliano Zapata,831,,,
-28,Tamaulipas,General Francisco Villa,841,,,
+28,Tamaulipas,General Francisco Villa,841,"(25.0175116, -98.0752046)","(24.9775116, -98.1152046)","(25.0575116, -98.0352046)"
 28,Tamaulipas,González,836,"(22.790387350000003, -98.57631895542931)","(22.3880068, -98.907307)","(23.1925646, -98.2892494)"
 28,Tamaulipas,Graciano Sánchez,836,"(22.6554824, -98.5560779)","(22.6154824, -98.5960779)","(22.6954824, -98.5160779)"
 28,Tamaulipas,Gsemez,835,,,
@@ -2544,7 +2544,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 29,Tlaxcala,Altzayanca,276,"(19.4267173, -97.798279)","(19.4266988, -97.7983498)","(19.4267173, -97.798279)"
 29,Tlaxcala,Apizaco,241,"(19.42643095, -98.07743344645611)","(19.3726118, -98.1798093)","(19.4802076, -98.0589992)"
 29,Tlaxcala,Benito Juárez,748,"(19.596318, -98.41812529069324)","(19.5759819, -98.4588335)","(19.6166884, -98.36201)"
-29,Tlaxcala,Calpulalpan,749,,,
+29,Tlaxcala,Calpulalpan,749,"(19.587778, -98.569167)","(19.5644507, -98.5880854)","(19.6004169, -98.5396921)"
 29,Tlaxcala,Chiautempan,246,,,
 29,Tlaxcala,Españita,241,"(19.44076365, -98.4240105269718)","(19.3816562, -98.5082626)","(19.4998119, -98.3487794)"
 29,Tlaxcala,Huamantla,247,,,
@@ -2816,7 +2816,7 @@ id_estado,estado,ciudad,lada,centro,suroeste,noreste
 31,Yucatan,Dzilam de Bravo,991,"(21.440848799999998, -88.62598668172413)","(21.3388873, -88.9714464)","(21.5426035, -88.4114346)"
 31,Yucatan,Dzilam González,991,,,
 31,Yucatan,Espita,986,,,
-31,Yucatan,Flamboyanes,969,"(21.1085321, -89.4223225)",,
+31,Yucatan,Flamboyanes,969,"(21.210161, -89.66049)","(21.190161, -89.68049)","(21.230161, -89.64049)"
 31,Yucatan,Halacho,997,"(20.586275299999997, -90.28328355701547)","(20.4252259, -90.3866488)","(20.7473047, -89.9967036)"
 31,Yucatan,Hocaba,988,,,
 31,Yucatan,Hoctun,988,,,
