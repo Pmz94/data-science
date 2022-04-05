@@ -1,0 +1,602 @@
+idx,ciudad,estado
+3,Ciénaga Grande,Aguascalientes
+5,Emiliano Zapata,Aguascalientes
+6,General Ignacio Zaragoza,Aguascalientes
+7,Gral. J. Ma. Morelos y Pavón,Aguascalientes
+8,Jaltiche de Abajo,Aguascalientes
+12,La Punta,Aguascalientes
+25,Alfredo B. Bonfil,Baja California
+27,Benito Juárez (Tecolotes),Baja California
+31,Col. Benito García(Zorrillo),Baja California
+41,Ejido José María Morelos,Baja California
+43,Ejido Monterrey,Baja California
+44,Ejido Ojo de Agua,Baja California
+49,El Descanso,Baja California
+54,El Sauzal,Baja California
+57,Estación Coahuila (Km 57),Baja California
+59,Guadalupe Victoria (Km 43),Baja California
+62,Ingeniero Francisco Murguía,Baja California
+67,La Bufadora,Baja California
+70,Marena Cove,Baja California
+75,Nacionalista de Sánchez T.,Baja California
+78,Ojos Negros Real del Castillo,Baja California
+81,Poblado Jesús Sansón Flores,Baja California
+85,Punta Banda,Baja California
+88,Rosarito (Campo 30-06),Baja California
+101,Valle de las Palmas,Baja California
+108,Buena Vista,Baja California Sur
+109,Cabo del Sol,Baja California Sur
+110,Cabo Real,Baja California Sur
+116,Gustavo Díaz Ordaz,Baja California Sur
+120,Las Lagunitas,Baja California Sur
+133,Villa Alberto A. Alvarado A.,Baja California Sur
+175,Colonia Soconusco,Chiapas
+180,El Ingenio Azucarero,Chiapas
+182,El Parral,Chiapas
+183,El Rayón,Chiapas
+194,Jitotol de Zaragoza,Chiapas
+196,La Libertad (Municipio La Libertad),Chiapas
+197,La Libertad (Municipio Suchiate),Chiapas
+199,Las Garzas,Chiapas
+206,Nueva Concordia,Chiapas
+216,Pueblo Nuevo Comaltitlán,Chiapas
+220,Pujiltic,Chiapas
+224,Revolución Mexicana,Chiapas
+231,Soyatitán,Chiapas
+249,Villa de Acala,Chiapas
+255,Areponapuchi,Chihuahua
+258,Benito Juárez (Mpio.Buenaven,Chihuahua
+262,Campo 305 ( Jagueyes ),Chihuahua
+263,Campo Menonita Número 106,Chihuahua
+264,Campo Numero Ciento Uno Viejo,Chihuahua
+265,Campo Número Cientosiete,Chihuahua
+266,Campo Número Ocho,Chihuahua
+267,Campo Número Seis y Medio B,Chihuahua
+268,Campo Número Veinte,Chihuahua
+269,Campo Número Veintidós,Chihuahua
+279,Ciudad Madera,Chihuahua
+281,Colonia Anáhuac,Chihuahua
+282,Colonia Campesina,Chihuahua
+288,Dr. Porfirio Parra (La Caseta),Chihuahua
+289,Ejido B.Juárez (Mpio.Namiquipa),Chihuahua
+291,Ejido El Largo,Chihuahua
+293,El Porvenir (Mpio. Bachiniva),Chihuahua
+294,El Porvenir (Mpio. Praxedis G.),Chihuahua
+297,El Vergel (Ejido El Vergel),Chihuahua
+298,Escalón,Chihuahua
+301,Guadalupe Distrito Bravos,Chihuahua
+302,Guadalupe Victoria (Mp.Asención),Chihuahua
+311,La Ascensión,Chihuahua
+312,La Boquilla del Conchos,Chihuahua
+321,Lázaro Cárdenas (Mpio Meoqui),Chihuahua
+325,Matachic,Chihuahua
+326,Monte Verde (El Coyote),Chihuahua
+330,Nueva Madera,Chihuahua
+332,Oscar Soto Maynez,Chihuahua
+334,Pascual Orozco (San Isidro),Chihuahua
+335,Pedro Meoqui,Chihuahua
+340,Ricardo Flores Magón,Chihuahua
+352,San Pablo Balleza,Chihuahua
+355,Santa Bárbara de Tutuaca,Chihuahua
+356,Santa Cruz de Rosales,Chihuahua
+358,Santa Gertrudis (La Hacienda),Chihuahua
+364,Sección Enríquez,Chihuahua
+365,Sisoguichi,Chihuahua
+367,Temosachi,Chihuahua
+369,Torreón de Cañas,Chihuahua
+374,Valle de Ignacio Allende,Chihuahua
+378,Villa Aldama,Chihuahua
+380,Álvaro Obregón,Ciudad de México
+381,Azcapotzalco,Ciudad de México
+386,Gustavo A. Madero,Ciudad de México
+390,Miguel Hidalgo,Ciudad de México
+402,Cuatrocienegas,Coahuila
+404,Entronque Congregación Hgo.,Coahuila
+412,La Concordia (Rosita),Coahuila
+437,San Pedro,Coahuila
+438,San Rafael de Arriba,Coahuila
+444,Cabañas Juluapan,Colima
+447,Chiapa,Colima
+449,Ciudad de Villa de Alvarez,Colima
+450,Cofradía de Suchitlán,Colima
+455,Cuyutlán,Colima
+459,Los Tepames,Colima
+475,Ciénaga de Ntra. Señora de Gpe.,Durango
+479,Cuauhtémoc,Durango
+484,Ejido Revolución (Las Víboras),Durango
+485,El Compás,Durango
+486,El Lucero (Arcinas),Durango
+495,Gral.Felipe Carrillo Puerto,Durango
+502,José Guadalupe Aguilera,Durango
+512,Los Herrera,Durango
+519,Nuevo San Diego Tensaenz,Durango
+523,Pedriceña (Estación Pedriceña),Durango
+529,San José de Tuitán (Tuitán),Durango
+531,San Juan del Río del Centauro,Durango
+535,San Nicolás de Presidio,Durango
+564,Axotlán,Estado de México
+567,Campo Militar N. 37B (El Cabi),Estado de México
+568,Canalejas,Estado de México
+569,Capardillas (Rcho Sta Lugarda),Estado de México
+574,Chosto de los Jarros,Estado de México
+579,Coatepec Harinas,Estado de México
+589,El Tajuelo,Estado de México
+590,Ex-hacienda de Solís,Estado de México
+603,Jorobas,Estado de México
+605,La Esperanza,Estado de México
+607,La Unidad Huitzizilapan,Estado de México
+608,Las Cabañas,Estado de México
+611,Los Reyes Acozac,Estado de México
+613,Magdalena Chichicaspa,Estado de México
+620,Nextlalpan,Estado de México
+628,Ozumbilla (Ejido El Zapote),Estado de México
+631,Polotitlán,Estado de México
+633,Pueblo Tecamac,Estado de México
+634,Rancho Avándaro,Estado de México
+635,Río Frío,Estado de México
+637,San Andrés Cuexcontitlán,Estado de México
+639,San Andrés Tlalamac,Estado de México
+642,San Bartolo Cuautlalpan,Estado de México
+649,San Francisco Magu,Estado de México
+650,San Francisco Tepeolulco,Estado de México
+651,San Francisco Zacacalco,Estado de México
+652,San Gabriel  Docuan,Estado de México
+655,San José El Vidrio,Estado de México
+656,San Juan Pueblo Nuevo,Estado de México
+658,San Lorenzo Malacota,Estado de México
+660,San Luis Tecuahutitlán,Estado de México
+661,San Marcos Nepantla,Estado de México
+662,San Maria Atarasquillo,Estado de México
+663,San Martín Cachihuapan,Estado de México
+671,San Miguel Jaltepec,Estado de México
+672,San Miguel Mimiapan,Estado de México
+678,San Pedro los Baños,Estado de México
+685,Santa Cruz Ayotuzco,Estado de México
+687,Santa María Canchesda,Estado de México
+688,Santa María Cuevas (Cuevas),Estado de México
+690,Santa María Magdalena Cahuacán,Estado de México
+694,Santiago Coachochitlán,Estado de México
+695,Santiago Cuautlalpan (Tepotzotlán),Estado de México
+696,Santiago Cuautlalpan (Texcoco),Estado de México
+697,Santiago Oxtotitlán,Estado de México
+712,Tenantongo (Avándaro),Estado de México
+713,Tenjay,Estado de México
+718,Tepexpan,Estado de México
+719,Tepojaco,Estado de México
+723,Texcaltitlán,Estado de México
+728,Tlapanaloya,Estado de México
+736,Valle de Chalco,Estado de México
+739,Villa Nicolás Romero,Estado de México
+741,Xala,Estado de México
+744,Xometla,Estado de México
+752,Adjuntas del Río,Guanajuato
+753,Alvaro Obregón,Guanajuato
+758,Arperos,Guanajuato
+759,Arreguín de Abajo,Guanajuato
+760,Atotonilco (santuario),Guanajuato
+761,Bajío de Bonillas,Guanajuato
+762,Buenavista de Cortés,Guanajuato
+763,Caleras de Ameche,Guanajuato
+764,Calzada del Tepozán,Guanajuato
+765,Cañada de Caracheo,Guanajuato
+766,Carrizal Grande,Guanajuato
+768,Cerano,Guanajuato
+769,Cerro Gordo,Guanajuato
+770,Chamácuaro,Guanajuato
+771,Charco de Pantoja,Guanajuato
+772,Chichimequillas,Guanajuato
+773,Chupicuaro (Nuevo Chupicuaro),Guanajuato
+774,Ciudad Manuel Doblado,Guanajuato
+775,Colonia 18 de Marzo,Guanajuato
+776,Comanjilla,Guanajuato
+779,Corralejo de Hidalgo,Guanajuato
+781,Covadonga,Guanajuato
+783,Cuevas de Morales,Guanajuato
+784,Cupareo,Guanajuato
+789,El Derramadero,Guanajuato
+790,El Fresno,Guanajuato
+791,El Jocoque,Guanajuato
+792,El Mármol,Guanajuato
+793,El Ramillete,Guanajuato
+795,El Sauz(Villaseñor),Guanajuato
+796,El Tigre,Guanajuato
+799,Frías,Guanajuato
+800,Guadalupe de Rivera,Guanajuato
+802,Guarapo,Guanajuato
+804,Huapango,Guanajuato
+805,Huitzatarito,Guanajuato
+806,Iramuco,Guanajuato
+810,Jesús María,Guanajuato
+811,Juan Lucas,Guanajuato
+812,Juan Martín,Guanajuato
+814,La Aldea,Guanajuato
+815,La Caja,Guanajuato
+816,La Calera (El Canario),Guanajuato
+817,La Encarnación,Guanajuato
+818,La Escondida,Guanajuato
+819,La Estancia de Sn José del Carmen,Guanajuato
+820,La Joya de Calvillo,Guanajuato
+821,Laguna Larga,Guanajuato
+822,Lagunillas,Guanajuato
+823,Las Cañas,Guanajuato
+824,Las Hilamas (El Piedrero),Guanajuato
+825,Las Jicamas,Guanajuato
+827,Lo de Juárez,Guanajuato
+828,Loma de Zempoala,Guanajuato
+829,Loreto (Teresa),Guanajuato
+830,Los Frailes,Guanajuato
+831,Los Ocotes,Guanajuato
+832,Los Rodríguez,Guanajuato
+833,Los Sauces,Guanajuato
+834,Loza de los Padres (La Loza),Guanajuato
+838,Mineral de San Pedro Pozos,Guanajuato
+839,Moncada,Guanajuato
+841,Neutla,Guanajuato
+842,Nigromante,Guanajuato
+843,Nuevo México,Guanajuato
+845,Ochomitas,Guanajuato
+846,Ojo de Agua de Ballesteros,Guanajuato
+847,Ordeñita de Barajas,Guanajuato
+848,Orduña de Arriba,Guanajuato
+849,Palo Alto de Abajo,Guanajuato
+851,Parácuaro,Guanajuato
+852,Pénjamo,Guanajuato
+853,Peralta,Guanajuato
+855,Plan de Ayala (Santa Rosa),Guanajuato
+856,Pozos CD. Porfirio Díaz,Guanajuato
+857,Praderas de la Hacienda,Guanajuato
+859,Puentecillas,Guanajuato
+860,Puerta de Andaracua,Guanajuato
+862,Rancho Nuevo de la Cruz,Guanajuato
+863,Rancho Nuevo de San Andrés,Guanajuato
+864,Rancho Seco de Guantes,Guanajuato
+866,Río Laja,Guanajuato
+870,San Antonio de Mogotes,Guanajuato
+871,San Cristóbal (El Cerrito),Guanajuato
+872,San Cristóbal de Ayala,Guanajuato
+874,San Felipe (El Chilarillo),Guanajuato
+877,San Gabriel,Guanajuato
+878,San José de Gracia,Guanajuato
+879,San José de Merino,Guanajuato
+881,San José Temascatio,Guanajuato
+883,San Juan del Llanito,Guanajuato
+885,San Mateo Tocuaro (Tocuaro),Guanajuato
+887,San Miguel Emenguaro,Guanajuato
+889,San Nicolás de la Condesa,Guanajuato
+890,San Nicolás de los Agustinos,Guanajuato
+891,San Pablo Casacuarán,Guanajuato
+892,San Pablo Pejo (San Pablo),Guanajuato
+893,San Pedro de los Naranjos,Guanajuato
+894,San Pedro Tenango El Viejo,Guanajuato
+895,San Roque,Guanajuato
+896,San Roque de Montes,Guanajuato
+897,San Salvador Torrecillas,Guanajuato
+899,Santa Mónica Ozumbilla,Guanajuato
+900,Santa Rosa,Guanajuato
+902,Santas Marías,Guanajuato
+903,Santiago de Cuenda,Guanajuato
+905,Sarabia,Guanajuato
+910,Tomelopitos,Guanajuato
+916,Villas de Irapuato,Guanajuato
+918,Yustis,Guanajuato
+919,Zapote de Adjuntas,Guanajuato
+920,Zapote de Peralta,Guanajuato
+925,Acuchillán del Progreso,Guerrero
+936,Arroyo Grande,Guerrero
+944,Barra Vieja,Guerrero
+969,El Espinalillo,Guerrero
+970,El Ocotito,Guerrero
+987,Luces del Mar,Guerrero
+1006,Sabana Grande,Guerrero
+1010,San Juan Tetelcingo,Guerrero
+1015,San Miguel Tecuixiapan,Guerrero
+1019,Santa Ana del Aguila,Guerrero
+1040,Troncones (Emiliano Zapata),Guerrero
+1076,Col. 28 de Mayo (Santa Rosa),Hidalgo
+1079,El Pedregal San José,Hidalgo
+1081,El Tothie,Hidalgo
+1093,Jagüey de Téllez,Hidalgo
+1094,Jaltepec,Hidalgo
+1095,José María Morelos (San José),Hidalgo
+1096,La Lagunilla,Hidalgo
+1097,La Providencia,Hidalgo
+1098,Las Plazas,Hidalgo
+1107,Napateco,Hidalgo
+1110,Orizabita,Hidalgo
+1113,Praderas del Potrero,Hidalgo
+1121,San Miguel Vindho,Hidalgo
+1123,San Salvador,Hidalgo
+1127,Santa Ana Hueytlalpan,Hidalgo
+1128,Santa Matilde,Hidalgo
+1143,Teocalco,Hidalgo
+1150,Tlahuelompa,Hidalgo
+1170,Antonio Escobedo,Jalisco
+1173,Atengo,Jalisco
+1182,Barranca de Otates,Jalisco
+1184,Base Aérea Militar No. 5,Jalisco
+1188,Betulia,Jalisco
+1191,Campamento Sarh,Jalisco
+1192,Campo Acosta,Jalisco
+1196,Careyes,Jalisco
+1204,Club de Golf Santa Anita,Jalisco
+1220,El Puesto,Jalisco
+1226,Etzatlán,Jalisco
+1227,Francisco Javier Mina,Jalisco
+1228,Gómez Farías,Jalisco
+1232,Huascato,Jalisco
+1235,Huisquilco (Huiscuilco),Jalisco
+1244,Josefino de Allende,Jalisco
+1249,La Frontera,Jalisco
+1250,La Garita,Jalisco
+1253,La Manzanilla,Jalisco
+1255,La Mesa (El Fresnito),Jalisco
+1260,Las Navajas,Jalisco
+1262,Las Pintas,Jalisco
+1264,Los Azulitos,Jalisco
+1265,Los Campos,Jalisco
+1266,Los Tecomates (Piedra Pesada),Jalisco
+1270,Manuel M. Dieguez,Jalisco
+1273,Matanzas,Jalisco
+1278,Mezcala (Mp.Tepatitlán de Morelo),Jalisco
+1279,Mezcala de los Romeros,Jalisco
+1283,Nicolás R. Casillas,Jalisco
+1288,Palomar,Jalisco
+1290,Paso de Cuarenta,Jalisco
+1297,Quila (Quila El Grande),Jalisco
+1299,Rancho Contento,Jalisco
+1300,Rancho La Tijera,Jalisco
+1301,San Andrés Figueroa,Jalisco
+1302,San Antonio de Fernández,Jalisco
+1305,San Clemente,Jalisco
+1306,San Cristóbal,Jalisco
+1311,San Gaspar de los Reyes,Jalisco
+1317,San José de la Paz,Jalisco
+1319,San José de los Reynoso,Jalisco
+1325,San Marcos (Mp.Zacoalco de Torres,Jalisco
+1326,San Marcos (Mpio. San Marcos),Jalisco
+1327,San Marcos (Mpio. Tonila),Jalisco
+1329,San Martín de Zula (Zula),Jalisco
+1331,San Mateo,Jalisco
+1334,San Miguel Zapotitlán,Jalisco
+1336,San Patricio (Melaque),Jalisco
+1338,San Ramón,Jalisco
+1339,San Sebastián del Alamo,Jalisco
+1346,Santa María de Abajo O Transpontina,Jalisco
+1347,Santa María del Valle,Jalisco
+1348,Santiaguito de Velázquez,Jalisco
+1353,Tamazulita,Jalisco
+1355,Tasinaxtla (La Cañada),Jalisco
+1358,Tecualtitán,Jalisco
+1363,Tepusco,Jalisco
+1369,Tlacuitapan,Jalisco
+1380,Tuxcacuesco,Jalisco
+1382,Unión de Guadalupe,Jalisco
+1388,Villa de Contla (Contla),Jalisco
+1392,Villa Purificación,Jalisco
+1421,Capacho,Michoacán
+1424,Catalinas (Francisco Villa),Michoacán
+1425,Caurio de Guadalupe (Cabrio),Michoacán
+1426,Cenobio Moreno (Las Colonias),Michoacán
+1431,Cherán Atzicuirin,Michoacán
+1440,Coeneo de la Libertad,Michoacán
+1448,Cuamío,Michoacán
+1456,El Ahuaje,Michoacán
+1458,El Chauz,Michoacán
+1460,El Rosario,Michoacán
+1462,El Sauz de Abajo,Michoacán
+1464,Erongaicuaro,Michoacán
+1465,Estación Queréndaro,Michoacán
+1471,Gildardo Magaña (Los Angeles),Michoacán
+1472,Guascuaro de Mugica,Michoacán
+1484,Janambo,Michoacán
+1488,Jucatacato,Michoacán
+1491,La Estanzuela,Michoacán
+1492,La Excusa,Michoacán
+1494,La Luz (Mpio. Pajacuarán),Michoacán
+1495,La Luz (Mpio. Penjamillo),Michoacán
+1498,La Palma (La Palma de Jesús),Michoacán
+1499,La Palma (Las Palmas),Michoacán
+1501,La Plaza de Fco. J. Mugica,Michoacán
+1502,La Sauceda,Michoacán
+1507,Las Ranas,Michoacán
+1511,Los Pilares,Michoacán
+1514,Mariano Escobedo (San Lorenzo),Michoacán
+1520,Numerán,Michoacán
+1523,Pajarearán,Michoacán
+1531,Patambán (Patambam),Michoacán
+1540,Punta del Agua,Michoacán
+1545,Quiringuicharo (La Hacienda),Michoacán
+1547,Rancho Nuevo,Michoacán
+1551,San Andrés La Venta,Michoacán
+1552,San Andrés Zirondaro,Michoacán
+1555,San Antonio Villalongín,Michoacán
+1558,San José Huipana (Huipana),Michoacán
+1559,San Juan de Viña,Michoacán
+1561,San Martín,Michoacán
+1562,San Miguel Epejan,Michoacán
+1563,San Pedro Jácuaro (Las Joyas),Michoacán
+1564,Santa Ana Amatlán (Santa Ana),Michoacán
+1568,Santa Fe del Río,Michoacán
+1571,Santiago Tingambato,Michoacán
+1582,Ticuitaco (Tocuitaco),Michoacán
+1591,Tungareo,Michoacán
+1592,Turitzio,Michoacán
+1595,Tzintzingareo,Michoacán
+1596,Tziritzicuaro (Nativitas),Michoacán
+1599,Uspero (Reynosa),Michoacán
+1600,Valle de Juárez (Jerahuaro),Michoacán
+1601,Venustiano Carranza,Michoacán
+1607,Yoricostio (La Villita),Michoacán
+1614,Ziquitaro,Michoacán
+1628,Cuahuchichinola,Morelos
+1641,Kunetzin de los Volcan,Morelos
+1643,Marcelino Rodríguez,Morelos
+1648,Pedro Amaro,Morelos
+1651,San José Vistahermosa,Morelos
+1653,San Vicente de Juárez,Morelos
+1654,Santa Fe,Morelos
+1656,Telixtac,Morelos
+1658,Tenextepango,Morelos
+1673,Xaloxtoc,Morelos
+1693,Cruz de Juanacaxtle,Nayarit
+1699,Felipe Carrillo Puerto,Nayarit
+1700,Fracc. Emiliano Zapata,Nayarit
+1710,Lo de Marcos,Nayarit
+1756,Ciénaga de Flores,Nuevo León
+1761,Ciudad Santa Catarina,Nuevo León
+1783,La Ascensión,Nuevo León
+1796,Parque Ind. Cienega de Flores,Nuevo León
+1797,Parque Industrial Cd. Mitras,Nuevo León
+1807,Villa de Paras,Nuevo León
+1812,Bahía de Huatulco(crucesita),Oaxaca
+1814,Barrio El Rosario,Oaxaca
+1817,Ciudad de Huajuapam de León,Oaxaca
+1824,Guegovela,Oaxaca
+1828,Jalapa del Marque,Oaxaca
+1843,Papaloapam,Oaxaca
+1844,Paso Ancho,Oaxaca
+1850,Rincón Juárez,Oaxaca
+1869,San Juan Mixtepec Distrito 08,Oaxaca
+1873,San Miguel Sola de Vega,Oaxaca
+1878,San Pedro de Tututepec,Oaxaca
+1883,San Pedro y San Pablo Teposco,Oaxaca
+1907,Santo Domingo Yanhuitlán,Oaxaca
+1920,Trinidad de Viguera,Oaxaca
+1925,Villa de Tamazulapam del Progre,Oaxaca
+1942,Calmeca (San Juan Calmeca),Puebla
+1945,Chila de la Sal,Puebla
+1946,Chila de las Flores,Puebla
+1948,Chipilo de Francisco Javier M.,Puebla
+1949,Cholula de Rivadabia,Puebla
+1953,Cuachila,Puebla
+1956,El Oasis Valsequillo,Puebla
+1958,Estación San Diego,Puebla
+1959,Guadalupe Santa Ana,Puebla
+1964,Huatlatlauca,Puebla
+1977,La Venta (Cacaloxuchitl),Puebla
+1978,Lagunillas de Rayón,Puebla
+1981,Martiniano Hernández,Puebla
+1997,San Antonio Chiltepec,Puebla
+2004,San Francisco Cuapa,Puebla
+2014,San José Tlautla,Puebla
+2022,San Lucas Tulcingo (Tulcingo),Puebla
+2024,San Martín Texmelucan,Puebla
+2025,San Martinito,Puebla
+2029,San Nicolás de Buenos Aires,Puebla
+2031,San Pablo Amicano,Puebla
+2040,San Sebastián Aparicio,Puebla
+2042,San Simon Yehualtepec,Puebla
+2073,Tianguistengo,Puebla
+2079,Tonantzintla,Puebla
+2085,Villa Lázaro Cárdenas (La Uno),Puebla
+2086,Villa Rafael Lara Grajales,Puebla
+2106,Fracc. Industrial Bernardo Q.,Querétaro
+2107,Granjas Residenciales,Querétaro
+2110,Jurica (Ex-Hacienda),Querétaro
+2122,Refugio,Querétaro
+2130,Akumal,Quintana Roo
+2135,Chemuyil,Quintana Roo
+2158,Xpu-ha,Quintana Roo
+2170,Colonia El Meco,San Luis Potosí
+2174,El Capulín,San Luis Potosí
+2179,Exhacienda de Jesús María,San Luis Potosí
+2182,La Paz,San Luis Potosí
+2187,Palma de la Cruz,San Luis Potosí
+2189,Plan de Iguala,San Luis Potosí
+2209,Suspiro Picacho,San Luis Potosí
+2219,Tierranueva,San Luis Potosí
+2229,Adolfo López M. (El Jahuara ),Sinaloa
+2233,Aguaruto,Sinaloa
+2235,Alfonso G. Calderón (Pob. 7),Sinaloa
+2240,Bachomobampo Número Dos,Sinaloa
+2242,Bagojo Colectivo E. Zapata,Sinaloa
+2251,Col. Agricola Independencia,Sinaloa
+2257,Coyotitán,Sinaloa
+2259,Cubiri de Portelas,Sinaloa
+2266,El Castillo (Mpio. Mazatlán),Sinaloa
+2267,El Castillo (Mpio. Navolato),Sinaloa
+2284,Gabriel Leyva Solanoj,Sinaloa
+2286,General  Chávez Talamantes,Sinaloa
+2290,Gustavo Díaz O. (El Carrizo),Sinaloa
+2300,Las Grullas Margen Izquierda,Sinaloa
+2305,Mezquite Alto,Sinaloa
+2310,Nueve de Diciembre,Sinaloa
+2314,Poblado Número Cinco,Sinaloa
+2315,Poblado Número Seis,Sinaloa
+2333,Villa Adolfo López M. (El Tamar,Sinaloa
+2334,Villa Gustavo Díaz O (Campo,Sinaloa
+2335,Villa Juárez(Campo Gob.),Sinaloa
+2352,Bahía de Kino,Sonora
+2365,Colonia El Tajo,Sonora
+2366,Colonia Irrigación,Sonora
+2369,Ejido Cuauhtémoc (Campo Cinco),Sonora
+2370,Ejido Francisco Javier Mina,Sonora
+2371,Ejido La Victoria,Sonora
+2395,La Choya,Sonora
+2397,Los Abanicos (El Abanico),Sonora
+2398,Los Globos,Sonora
+2402,Miguel Alemán (La Doce),Sonora
+2443,Cap. Felipe Castellanos,Tabasco
+2459,Macultepec-Ocuiltzapotlan,Tabasco
+2462,Once de Febrero 1a. Sección,Tabasco
+2465,Pueblo Sánchez Magallane,Tabasco
+2472,Villa Aldama 1a. Sección,Tabasco
+2490,Ejido Germinal,Tamaulipas
+2492,El Barretal,Tamaulipas
+2497,Fortines y Emiliano Zapata,Tamaulipas
+2501,Gral. Fco. González Villarreal,Tamaulipas
+2502,Gsemez,Tamaulipas
+2514,Los Comales,Tamaulipas
+2539,Villa de Méndez,Tamaulipas
+2558,San Cosme Xalostoc,Tlaxcala
+2560,San Lorenzo Cuapiaxtla,Tlaxcala
+2563,San Salvador Tzompantepec,Tlaxcala
+2567,Santa Maria Nativitas,Tlaxcala
+2592,Amartillán,Veracruz
+2595,Angel Rosario Cabada,Veracruz
+2597,Arroyo Hondo,Veracruz
+2602,Campo Cuichapa (Mpio. Cuichapa),Veracruz
+2609,Cd. Cuauhtémoc,Veracruz
+2616,Chijol 17,Veracruz
+2644,Cuichapa (Mpio. Moloacan),Veracruz
+2647,El Alazán,Veracruz
+2650,El Conchal,Veracruz
+2651,El Farallón(Campamento CFE),Veracruz
+2654,El Magozal,Veracruz
+2655,El Moralillo,Veracruz
+2668,Huayalejo,Veracruz
+2678,Jalapa (Xalapa),Veracruz
+2687,La Antigua,Veracruz
+2689,La Laguna y Monte del Castillo,Veracruz
+2692,La Vigueta,Veracruz
+2697,Loma Bonita,Veracruz
+2706,Medellín de Bravo,Veracruz
+2719,Nuevo Progreso (El Doce),Veracruz
+2740,Rafael Ramirez (Las Vigas),Veracruz
+2860,Uxmal  (Hoteles),Yucatán
+2865,Benito Juárez (Mpio.B. Juárez),Zacatecas
+2866,Benito Juárez (Mpio.Sombrerete),Zacatecas
+2867,Boquilla de Arriba,Zacatecas
+2868,Calera de Víctor Rosales,Zacatecas
+2869,Campo Cinco (La Honda),Zacatecas
+2870,Campo Diecisiete (La Honda),Zacatecas
+2874,Ciudad Jerez de García Salinas,Zacatecas
+2876,Colonia Madero (Madero),Zacatecas
+2878,El Bordo Buenavista,Zacatecas
+2879,El Cargadero,Zacatecas
+2880,El Chique,Zacatecas
+2882,Emiliano Zapata (Morones),Zacatecas
+2883,Ermita de Guadalupe,Zacatecas
+2884,Ermita de los Correas,Zacatecas
+2889,General Genaro Codina,Zacatecas
+2893,Hidalgo (Colonia Hidalgo),Zacatecas
+2903,Las Esperanzas (El Ranchito),Zacatecas
+2910,Momax,Zacatecas
+2912,Monte Mariana,Zacatecas
+2914,Moyahua,Zacatecas
+2920,Pastoria,Zacatecas
+2923,Plenitud,Zacatecas
+2935,Santa Elena (Francisco Zarco),Zacatecas
+2936,Santa Rita,Zacatecas
+2941,Tayahua (San José de Tayahua),Zacatecas
+2945,Tierra Blanca,Zacatecas
