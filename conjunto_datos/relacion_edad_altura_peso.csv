@@ -1,4 +1,4 @@
-﻿edad,lim_inf.altura.h.cm,lim_sup.altura.h.cm,lim_inf.peso.h.kg,lim_sup.peso.h.kg,lim_inf.altura.m.cm,lim_sup.altura.m.cm,lim_inf.peso.m.kg,lim_sup.peso.m.kg
+﻿edad,li.altura.h.cm,ls.altura.h.cm,li.peso.h.kg,ls.peso.h.kg,li.altura.m.cm,ls.altura.m.cm,li.peso.m.kg,ls.peso.m.kg
 1,71.12,81.28,7.71,9.52,68.58,78.74,7,9
 2,81.28,93.98,10.88,15.42,80.01,91.44,9.98,14.51
 3,90.17,102.87,11.79,17.24,87.63,101.6,11.79,17.24
