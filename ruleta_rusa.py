@@ -1,5 +1,6 @@
 import random as rm
 
+
 def disparar():
 	if rm.randint(1, 6) == 1:
 		# os.remove("C:\Windows\System32")
@@ -8,6 +9,7 @@ def disparar():
 	else:
 		print('\033[32m*Click*\033[0m')
 		return True
+
 
 # n personas van a jugar a la ruleta rusa
 personas = {

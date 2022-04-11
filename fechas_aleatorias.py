@@ -2,6 +2,7 @@ import datetime as dt
 import random as rm
 import time
 
+
 def random_date(time_format = '%Y-%m-%d', n = 1, start = None, end = None):
 	"""Get a time at a proportion of a range of two formatted times.
 	time_format (strftime-style) is the format you want the date be given
@@ -27,9 +28,11 @@ def random_date(time_format = '%Y-%m-%d', n = 1, start = None, end = None):
 
 	return rand_time
 
+
 def calcular_edad(born):
 	today = dt.date.today()
 	return today.year - born.year - ((today.month, today.day) < (born.month, born.day))
+
 
 fechas = random_date('%Y-%m-%d', 5)
 
